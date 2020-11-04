@@ -1,0 +1,12 @@
+C:\Users\user\source\repos\ERP_PROG\ERP_PROG\bin\Debug\ERP_PROG.exe.config
+C:\Users\user\source\repos\ERP_PROG\ERP_PROG\bin\Debug\ERP_PROG.exe
+C:\Users\user\source\repos\ERP_PROG\ERP_PROG\bin\Debug\ERP_PROG.pdb
+C:\Users\user\source\repos\ERP_PROG\ERP_PROG\obj\Debug\ERP_PROG.csprojAssemblyReference.cache
+C:\Users\user\source\repos\ERP_PROG\ERP_PROG\obj\Debug\ERP_PROG.Properties.Resources.resources
+C:\Users\user\source\repos\ERP_PROG\ERP_PROG\obj\Debug\ERP_PROG.csproj.GenerateResource.cache
+C:\Users\user\source\repos\ERP_PROG\ERP_PROG\obj\Debug\ERP_PROG.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\ERP_PROG\ERP_PROG\obj\Debug\ERP_PROG.exe
+C:\Users\user\source\repos\ERP_PROG\ERP_PROG\obj\Debug\ERP_PROG.pdb
+C:\Users\user\source\repos\ERP_PROG\ERP_PROG\obj\Debug\ERP_PROG.NormalForm.resources
+C:\Users\user\source\repos\ERP_PROG\ERP_PROG\obj\Debug\ERP_PROG.LoginForm.resources
+C:\Users\user\source\repos\ERP_PROG\ERP_PROG\obj\Debug\ERP_PROG.ApprovalForm.resources
