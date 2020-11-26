@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.30523.141
+VisualStudioVersion = 16.0.30104.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP_PROG", "ERP_PROG\ERP_PROG.csproj", "{2A6A5DA8-E4CC-49F9-919E-7205EF2A38D9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP_PROG", "ERP_PROG 인사\ERP_PROG.csproj", "{2A6A5DA8-E4CC-49F9-919E-7205EF2A38D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {810D92CC-B52B-4E6A-B112-5C2CA1B16EB6}
+		SolutionGuid = {1EC33B5F-F645-4680-81C9-0CFD46B45ED8}
 	EndGlobalSection
 EndGlobal

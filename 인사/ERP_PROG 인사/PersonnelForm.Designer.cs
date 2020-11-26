@@ -30,63 +30,65 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PersonnelForm));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.기본정보 = new System.Windows.Forms.TabPage();
+            this.label21 = new System.Windows.Forms.Label();
+            this.EmployeeID = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.comboBoxStaffSearch = new System.Windows.Forms.ComboBox();
-            this.buttonStaffSearch = new System.Windows.Forms.Button();
-            this.textBoxStaffSearch = new System.Windows.Forms.TextBox();
-            this.textBoxSTage = new System.Windows.Forms.TextBox();
+            this.EmployeeUpdate = new System.Windows.Forms.Button();
+            this.EmployeeDelete = new System.Windows.Forms.Button();
+            this.EmployeeSearchComboBox = new System.Windows.Forms.ComboBox();
+            this.EmployeeSearch = new System.Windows.Forms.Button();
+            this.EmployeeSearchTextBox = new System.Windows.Forms.TextBox();
+            this.EmployeeAge = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBoxSTcode = new System.Windows.Forms.TextBox();
+            this.EmployeeDepartment = new System.Windows.Forms.ComboBox();
+            this.EmployeeRank = new System.Windows.Forms.ComboBox();
+            this.EmployeeInsert = new System.Windows.Forms.Button();
+            this.EmployeeCode = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.button9 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBoxSThom2 = new System.Windows.Forms.TextBox();
+            this.EmployeeDetailedAddress = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBoxSThome = new System.Windows.Forms.TextBox();
+            this.EmployeeAddress = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBoxSTname = new System.Windows.Forms.TextBox();
+            this.EmployeeName = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.출근부 = new System.Windows.Forms.TabPage();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.buttonread = new System.Windows.Forms.Button();
-            this.buttonadd = new System.Windows.Forms.Button();
+            this.AttendanceRead = new System.Windows.Forms.Button();
+            this.AttendanceInsert = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBoxendMinute = new System.Windows.Forms.TextBox();
-            this.textBoxstartMinute = new System.Windows.Forms.TextBox();
-            this.textBoxendHour = new System.Windows.Forms.TextBox();
+            this.EndMinute = new System.Windows.Forms.TextBox();
+            this.StartMinute = new System.Windows.Forms.TextBox();
+            this.EndHour = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBoxstartHour = new System.Windows.Forms.TextBox();
+            this.StartHour = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.부서관리 = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.buttonDeptReister = new System.Windows.Forms.Button();
-            this.buttonDeptSerach = new System.Windows.Forms.Button();
-            this.buttonDeptRemove = new System.Windows.Forms.Button();
-            this.buttonDeptRevise = new System.Windows.Forms.Button();
-            this.textBoxDeptName1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.DepartmentInCancel = new System.Windows.Forms.Button();
+            this.DepartmentSerach = new System.Windows.Forms.Button();
+            this.DepartmentInsert = new System.Windows.Forms.Button();
+            this.DepartmentDelete = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.DepartmentUpdate = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.buttonDeptCancel = new System.Windows.Forms.Button();
-            this.buttonDeptAdd = new System.Windows.Forms.Button();
-            this.textBoxDeptHead = new System.Windows.Forms.TextBox();
-            this.textBoxDeptCode = new System.Windows.Forms.TextBox();
-            this.textBoxDeptName2 = new System.Windows.Forms.TextBox();
+            this.DepartmentID = new System.Windows.Forms.TextBox();
+            this.DepartmentHead = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.DepartmentCode = new System.Windows.Forms.TextBox();
+            this.DepartmentName = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -107,6 +109,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewDepartment = new System.Windows.Forms.DataGridView();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -125,6 +129,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDepartment)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -180,29 +185,33 @@
             this.tabControl1.Controls.Add(this.출근부);
             this.tabControl1.Controls.Add(this.부서관리);
             this.tabControl1.Controls.Add(this.급여내역서);
-            this.tabControl1.Location = new System.Drawing.Point(174, 87);
+            this.tabControl1.Location = new System.Drawing.Point(178, 87);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(722, 298);
             this.tabControl1.TabIndex = 91;
+            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
             // 기본정보
             // 
+            this.기본정보.Controls.Add(this.textBox1);
+            this.기본정보.Controls.Add(this.label21);
+            this.기본정보.Controls.Add(this.EmployeeID);
             this.기본정보.Controls.Add(this.groupBox1);
-            this.기본정보.Controls.Add(this.textBoxSTage);
+            this.기본정보.Controls.Add(this.EmployeeAge);
             this.기본정보.Controls.Add(this.label20);
-            this.기본정보.Controls.Add(this.comboBox3);
-            this.기본정보.Controls.Add(this.comboBox2);
-            this.기본정보.Controls.Add(this.button9);
-            this.기본정보.Controls.Add(this.textBoxSTcode);
+            this.기본정보.Controls.Add(this.EmployeeDepartment);
+            this.기본정보.Controls.Add(this.EmployeeRank);
+            this.기본정보.Controls.Add(this.EmployeeInsert);
+            this.기본정보.Controls.Add(this.EmployeeCode);
             this.기본정보.Controls.Add(this.label13);
             this.기본정보.Controls.Add(this.label10);
-            this.기본정보.Controls.Add(this.textBoxSThom2);
+            this.기본정보.Controls.Add(this.EmployeeDetailedAddress);
             this.기본정보.Controls.Add(this.label6);
-            this.기본정보.Controls.Add(this.textBoxSThome);
+            this.기본정보.Controls.Add(this.EmployeeAddress);
             this.기본정보.Controls.Add(this.label11);
             this.기본정보.Controls.Add(this.label9);
-            this.기본정보.Controls.Add(this.textBoxSTname);
+            this.기본정보.Controls.Add(this.EmployeeName);
             this.기본정보.Controls.Add(this.label8);
             this.기본정보.Controls.Add(this.label7);
             this.기본정보.Location = new System.Drawing.Point(4, 25);
@@ -213,73 +222,93 @@
             this.기본정보.Text = "기본정보";
             this.기본정보.UseVisualStyleBackColor = true;
             // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(382, 227);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(18, 15);
+            this.label21.TabIndex = 100;
+            this.label21.Text = "id";
+            this.label21.Visible = false;
+            // 
+            // EmployeeID
+            // 
+            this.EmployeeID.Location = new System.Drawing.Point(421, 224);
+            this.EmployeeID.Name = "EmployeeID";
+            this.EmployeeID.Size = new System.Drawing.Size(108, 25);
+            this.EmployeeID.TabIndex = 99;
+            this.EmployeeID.Visible = false;
+            // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button11);
-            this.groupBox1.Controls.Add(this.button5);
-            this.groupBox1.Controls.Add(this.comboBoxStaffSearch);
-            this.groupBox1.Controls.Add(this.buttonStaffSearch);
-            this.groupBox1.Controls.Add(this.textBoxStaffSearch);
-            this.groupBox1.Location = new System.Drawing.Point(23, 15);
+            this.groupBox1.Controls.Add(this.EmployeeUpdate);
+            this.groupBox1.Controls.Add(this.EmployeeDelete);
+            this.groupBox1.Controls.Add(this.EmployeeSearchComboBox);
+            this.groupBox1.Controls.Add(this.EmployeeSearch);
+            this.groupBox1.Controls.Add(this.EmployeeSearchTextBox);
+            this.groupBox1.Location = new System.Drawing.Point(21, 15);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(661, 69);
             this.groupBox1.TabIndex = 98;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "사원관리";
             // 
-            // button11
+            // EmployeeUpdate
             // 
-            this.button11.Location = new System.Drawing.Point(397, 24);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(68, 28);
-            this.button11.TabIndex = 92;
-            this.button11.Text = "수정";
-            this.button11.UseVisualStyleBackColor = true;
+            this.EmployeeUpdate.Location = new System.Drawing.Point(397, 24);
+            this.EmployeeUpdate.Name = "EmployeeUpdate";
+            this.EmployeeUpdate.Size = new System.Drawing.Size(68, 28);
+            this.EmployeeUpdate.TabIndex = 92;
+            this.EmployeeUpdate.Text = "수정";
+            this.EmployeeUpdate.UseVisualStyleBackColor = true;
+            this.EmployeeUpdate.Click += new System.EventHandler(this.EmployeeUpdate_Click);
             // 
-            // button5
+            // EmployeeDelete
             // 
-            this.button5.Location = new System.Drawing.Point(471, 24);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(68, 28);
-            this.button5.TabIndex = 91;
-            this.button5.Text = "삭제";
-            this.button5.UseVisualStyleBackColor = true;
+            this.EmployeeDelete.Location = new System.Drawing.Point(471, 24);
+            this.EmployeeDelete.Name = "EmployeeDelete";
+            this.EmployeeDelete.Size = new System.Drawing.Size(68, 28);
+            this.EmployeeDelete.TabIndex = 91;
+            this.EmployeeDelete.Text = "삭제";
+            this.EmployeeDelete.UseVisualStyleBackColor = true;
+            this.EmployeeDelete.Click += new System.EventHandler(this.EmployeeDelete_Click);
             // 
-            // comboBoxStaffSearch
+            // EmployeeSearchComboBox
             // 
-            this.comboBoxStaffSearch.FormattingEnabled = true;
-            this.comboBoxStaffSearch.Items.AddRange(new object[] {
+            this.EmployeeSearchComboBox.FormattingEnabled = true;
+            this.EmployeeSearchComboBox.Items.AddRange(new object[] {
             "부서명",
             "사원명",
             "나이"});
-            this.comboBoxStaffSearch.Location = new System.Drawing.Point(35, 24);
-            this.comboBoxStaffSearch.Name = "comboBoxStaffSearch";
-            this.comboBoxStaffSearch.Size = new System.Drawing.Size(106, 23);
-            this.comboBoxStaffSearch.TabIndex = 87;
+            this.EmployeeSearchComboBox.Location = new System.Drawing.Point(35, 24);
+            this.EmployeeSearchComboBox.Name = "EmployeeSearchComboBox";
+            this.EmployeeSearchComboBox.Size = new System.Drawing.Size(106, 23);
+            this.EmployeeSearchComboBox.TabIndex = 87;
             // 
-            // buttonStaffSearch
+            // EmployeeSearch
             // 
-            this.buttonStaffSearch.Location = new System.Drawing.Point(321, 24);
-            this.buttonStaffSearch.Name = "buttonStaffSearch";
-            this.buttonStaffSearch.Size = new System.Drawing.Size(68, 28);
-            this.buttonStaffSearch.TabIndex = 90;
-            this.buttonStaffSearch.Text = "검색";
-            this.buttonStaffSearch.UseVisualStyleBackColor = true;
-            this.buttonStaffSearch.Click += new System.EventHandler(this.buttonStaffSearch_Click);
+            this.EmployeeSearch.Location = new System.Drawing.Point(321, 24);
+            this.EmployeeSearch.Name = "EmployeeSearch";
+            this.EmployeeSearch.Size = new System.Drawing.Size(68, 28);
+            this.EmployeeSearch.TabIndex = 90;
+            this.EmployeeSearch.Text = "검색";
+            this.EmployeeSearch.UseVisualStyleBackColor = true;
+            this.EmployeeSearch.Click += new System.EventHandler(this.buttonStaffSearch_Click);
             // 
-            // textBoxStaffSearch
+            // EmployeeSearchTextBox
             // 
-            this.textBoxStaffSearch.Location = new System.Drawing.Point(168, 24);
-            this.textBoxStaffSearch.Name = "textBoxStaffSearch";
-            this.textBoxStaffSearch.Size = new System.Drawing.Size(134, 25);
-            this.textBoxStaffSearch.TabIndex = 89;
+            this.EmployeeSearchTextBox.Location = new System.Drawing.Point(168, 24);
+            this.EmployeeSearchTextBox.Name = "EmployeeSearchTextBox";
+            this.EmployeeSearchTextBox.Size = new System.Drawing.Size(134, 25);
+            this.EmployeeSearchTextBox.TabIndex = 89;
             // 
-            // textBoxSTage
+            // EmployeeAge
             // 
-            this.textBoxSTage.Location = new System.Drawing.Point(421, 107);
-            this.textBoxSTage.Name = "textBoxSTage";
-            this.textBoxSTage.Size = new System.Drawing.Size(206, 25);
-            this.textBoxSTage.TabIndex = 51;
+            this.EmployeeAge.Location = new System.Drawing.Point(421, 107);
+            this.EmployeeAge.Name = "EmployeeAge";
+            this.EmployeeAge.Size = new System.Drawing.Size(206, 25);
+            this.EmployeeAge.TabIndex = 51;
             // 
             // label20
             // 
@@ -290,36 +319,42 @@
             this.label20.TabIndex = 50;
             this.label20.Text = "나이";
             // 
-            // comboBox3
+            // EmployeeDepartment
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "인사",
-            "개발",
-            "고객"});
-            this.comboBox3.Location = new System.Drawing.Point(149, 221);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(139, 23);
-            this.comboBox3.TabIndex = 49;
+            this.EmployeeDepartment.FormattingEnabled = true;
+            this.EmployeeDepartment.Location = new System.Drawing.Point(149, 221);
+            this.EmployeeDepartment.Name = "EmployeeDepartment";
+            this.EmployeeDepartment.Size = new System.Drawing.Size(139, 23);
+            this.EmployeeDepartment.TabIndex = 49;
             // 
-            // comboBox2
+            // EmployeeRank
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.EmployeeRank.FormattingEnabled = true;
+            this.EmployeeRank.Items.AddRange(new object[] {
             "일반 사원",
             "부서장",
             "사장"});
-            this.comboBox2.Location = new System.Drawing.Point(149, 185);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(139, 23);
-            this.comboBox2.TabIndex = 48;
+            this.EmployeeRank.Location = new System.Drawing.Point(149, 185);
+            this.EmployeeRank.Name = "EmployeeRank";
+            this.EmployeeRank.Size = new System.Drawing.Size(139, 23);
+            this.EmployeeRank.TabIndex = 48;
             // 
-            // textBoxSTcode
+            // EmployeeInsert
             // 
-            this.textBoxSTcode.Location = new System.Drawing.Point(148, 107);
-            this.textBoxSTcode.Name = "textBoxSTcode";
-            this.textBoxSTcode.Size = new System.Drawing.Size(139, 25);
-            this.textBoxSTcode.TabIndex = 47;
+            this.EmployeeInsert.Location = new System.Drawing.Point(559, 219);
+            this.EmployeeInsert.Name = "EmployeeInsert";
+            this.EmployeeInsert.Size = new System.Drawing.Size(68, 31);
+            this.EmployeeInsert.TabIndex = 44;
+            this.EmployeeInsert.Text = "등록";
+            this.EmployeeInsert.UseVisualStyleBackColor = true;
+            this.EmployeeInsert.Click += new System.EventHandler(this.EmployeeInsert_Click);
+            // 
+            // EmployeeCode
+            // 
+            this.EmployeeCode.Location = new System.Drawing.Point(148, 107);
+            this.EmployeeCode.Name = "EmployeeCode";
+            this.EmployeeCode.Size = new System.Drawing.Size(139, 25);
+            this.EmployeeCode.TabIndex = 47;
             // 
             // label13
             // 
@@ -330,15 +365,6 @@
             this.label13.TabIndex = 46;
             this.label13.Text = "사원코드";
             // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(582, 224);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(68, 31);
-            this.button9.TabIndex = 44;
-            this.button9.Text = "등록";
-            this.button9.UseVisualStyleBackColor = true;
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -348,12 +374,12 @@
             this.label10.TabIndex = 2;
             this.label10.Text = "부서";
             // 
-            // textBoxSThom2
+            // EmployeeDetailedAddress
             // 
-            this.textBoxSThom2.Location = new System.Drawing.Point(421, 179);
-            this.textBoxSThom2.Name = "textBoxSThom2";
-            this.textBoxSThom2.Size = new System.Drawing.Size(206, 25);
-            this.textBoxSThom2.TabIndex = 3;
+            this.EmployeeDetailedAddress.Location = new System.Drawing.Point(421, 180);
+            this.EmployeeDetailedAddress.Name = "EmployeeDetailedAddress";
+            this.EmployeeDetailedAddress.Size = new System.Drawing.Size(206, 25);
+            this.EmployeeDetailedAddress.TabIndex = 3;
             // 
             // label6
             // 
@@ -364,17 +390,17 @@
             this.label6.TabIndex = 2;
             this.label6.Text = "상세주소";
             // 
-            // textBoxSThome
+            // EmployeeAddress
             // 
-            this.textBoxSThome.Location = new System.Drawing.Point(421, 143);
-            this.textBoxSThome.Name = "textBoxSThome";
-            this.textBoxSThome.Size = new System.Drawing.Size(206, 25);
-            this.textBoxSThome.TabIndex = 3;
+            this.EmployeeAddress.Location = new System.Drawing.Point(492, 143);
+            this.EmployeeAddress.Name = "EmployeeAddress";
+            this.EmployeeAddress.Size = new System.Drawing.Size(135, 25);
+            this.EmployeeAddress.TabIndex = 3;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(363, 150);
+            this.label11.Location = new System.Drawing.Point(363, 148);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(37, 15);
             this.label11.TabIndex = 2;
@@ -389,12 +415,12 @@
             this.label9.TabIndex = 2;
             this.label9.Text = "직급";
             // 
-            // textBoxSTname
+            // EmployeeName
             // 
-            this.textBoxSTname.Location = new System.Drawing.Point(148, 143);
-            this.textBoxSTname.Name = "textBoxSTname";
-            this.textBoxSTname.Size = new System.Drawing.Size(139, 25);
-            this.textBoxSTname.TabIndex = 3;
+            this.EmployeeName.Location = new System.Drawing.Point(148, 143);
+            this.EmployeeName.Name = "EmployeeName";
+            this.EmployeeName.Size = new System.Drawing.Size(139, 25);
+            this.EmployeeName.TabIndex = 3;
             // 
             // label8
             // 
@@ -416,17 +442,17 @@
             // 출근부
             // 
             this.출근부.Controls.Add(this.dateTimePicker1);
-            this.출근부.Controls.Add(this.buttonread);
-            this.출근부.Controls.Add(this.buttonadd);
+            this.출근부.Controls.Add(this.AttendanceRead);
+            this.출근부.Controls.Add(this.AttendanceInsert);
             this.출근부.Controls.Add(this.label17);
             this.출근부.Controls.Add(this.label19);
             this.출근부.Controls.Add(this.label18);
             this.출근부.Controls.Add(this.label16);
-            this.출근부.Controls.Add(this.textBoxendMinute);
-            this.출근부.Controls.Add(this.textBoxstartMinute);
-            this.출근부.Controls.Add(this.textBoxendHour);
+            this.출근부.Controls.Add(this.EndMinute);
+            this.출근부.Controls.Add(this.StartMinute);
+            this.출근부.Controls.Add(this.EndHour);
             this.출근부.Controls.Add(this.label15);
-            this.출근부.Controls.Add(this.textBoxstartHour);
+            this.출근부.Controls.Add(this.StartHour);
             this.출근부.Controls.Add(this.label14);
             this.출근부.Location = new System.Drawing.Point(4, 25);
             this.출근부.Name = "출근부";
@@ -438,35 +464,35 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(38, 56);
+            this.dateTimePicker1.Location = new System.Drawing.Point(58, 54);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 25);
             this.dateTimePicker1.TabIndex = 10;
             // 
-            // buttonread
+            // AttendanceRead
             // 
-            this.buttonread.Location = new System.Drawing.Point(559, 113);
-            this.buttonread.Name = "buttonread";
-            this.buttonread.Size = new System.Drawing.Size(115, 46);
-            this.buttonread.TabIndex = 9;
-            this.buttonread.Text = "출력";
-            this.buttonread.UseVisualStyleBackColor = true;
-            this.buttonread.Click += new System.EventHandler(this.buttonread_Click);
+            this.AttendanceRead.Location = new System.Drawing.Point(555, 104);
+            this.AttendanceRead.Name = "AttendanceRead";
+            this.AttendanceRead.Size = new System.Drawing.Size(70, 67);
+            this.AttendanceRead.TabIndex = 9;
+            this.AttendanceRead.Text = "출력";
+            this.AttendanceRead.UseVisualStyleBackColor = true;
+            this.AttendanceRead.Click += new System.EventHandler(this.buttonread_Click);
             // 
-            // buttonadd
+            // AttendanceInsert
             // 
-            this.buttonadd.Location = new System.Drawing.Point(427, 113);
-            this.buttonadd.Name = "buttonadd";
-            this.buttonadd.Size = new System.Drawing.Size(107, 46);
-            this.buttonadd.TabIndex = 8;
-            this.buttonadd.Text = "등록";
-            this.buttonadd.UseVisualStyleBackColor = true;
-            this.buttonadd.Click += new System.EventHandler(this.buttonadd_Click);
+            this.AttendanceInsert.Location = new System.Drawing.Point(435, 104);
+            this.AttendanceInsert.Name = "AttendanceInsert";
+            this.AttendanceInsert.Size = new System.Drawing.Size(70, 67);
+            this.AttendanceInsert.TabIndex = 8;
+            this.AttendanceInsert.Text = "등록";
+            this.AttendanceInsert.UseVisualStyleBackColor = true;
+            this.AttendanceInsert.Click += new System.EventHandler(this.buttonadd_Click);
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(208, 151);
+            this.label17.Location = new System.Drawing.Point(225, 149);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(22, 15);
             this.label17.TabIndex = 7;
@@ -475,7 +501,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(343, 151);
+            this.label19.Location = new System.Drawing.Point(353, 149);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(22, 15);
             this.label19.TabIndex = 7;
@@ -484,7 +510,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(343, 113);
+            this.label18.Location = new System.Drawing.Point(353, 111);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(22, 15);
             this.label18.TabIndex = 7;
@@ -493,53 +519,53 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(208, 113);
+            this.label16.Location = new System.Drawing.Point(225, 111);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(22, 15);
             this.label16.TabIndex = 7;
             this.label16.Text = "시";
             // 
-            // textBoxendMinute
+            // EndMinute
             // 
-            this.textBoxendMinute.Location = new System.Drawing.Point(248, 146);
-            this.textBoxendMinute.Name = "textBoxendMinute";
-            this.textBoxendMinute.Size = new System.Drawing.Size(89, 25);
-            this.textBoxendMinute.TabIndex = 5;
+            this.EndMinute.Location = new System.Drawing.Point(268, 144);
+            this.EndMinute.Name = "EndMinute";
+            this.EndMinute.Size = new System.Drawing.Size(81, 25);
+            this.EndMinute.TabIndex = 5;
             // 
-            // textBoxstartMinute
+            // StartMinute
             // 
-            this.textBoxstartMinute.Location = new System.Drawing.Point(248, 107);
-            this.textBoxstartMinute.Name = "textBoxstartMinute";
-            this.textBoxstartMinute.Size = new System.Drawing.Size(89, 25);
-            this.textBoxstartMinute.TabIndex = 5;
+            this.StartMinute.Location = new System.Drawing.Point(268, 105);
+            this.StartMinute.Name = "StartMinute";
+            this.StartMinute.Size = new System.Drawing.Size(81, 25);
+            this.StartMinute.TabIndex = 5;
             // 
-            // textBoxendHour
+            // EndHour
             // 
-            this.textBoxendHour.Location = new System.Drawing.Point(107, 146);
-            this.textBoxendHour.Name = "textBoxendHour";
-            this.textBoxendHour.Size = new System.Drawing.Size(95, 25);
-            this.textBoxendHour.TabIndex = 5;
+            this.EndHour.Location = new System.Drawing.Point(141, 144);
+            this.EndHour.Name = "EndHour";
+            this.EndHour.Size = new System.Drawing.Size(81, 25);
+            this.EndHour.TabIndex = 5;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(34, 151);
+            this.label15.Location = new System.Drawing.Point(54, 149);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(67, 15);
             this.label15.TabIndex = 4;
             this.label15.Text = "퇴근시간";
             // 
-            // textBoxstartHour
+            // StartHour
             // 
-            this.textBoxstartHour.Location = new System.Drawing.Point(107, 107);
-            this.textBoxstartHour.Name = "textBoxstartHour";
-            this.textBoxstartHour.Size = new System.Drawing.Size(95, 25);
-            this.textBoxstartHour.TabIndex = 5;
+            this.StartHour.Location = new System.Drawing.Point(141, 105);
+            this.StartHour.Name = "StartHour";
+            this.StartHour.Size = new System.Drawing.Size(81, 25);
+            this.StartHour.TabIndex = 5;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(34, 113);
+            this.label14.Location = new System.Drawing.Point(54, 111);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(67, 15);
             this.label14.TabIndex = 4;
@@ -559,143 +585,136 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.buttonDeptReister);
-            this.groupBox3.Controls.Add(this.buttonDeptSerach);
-            this.groupBox3.Controls.Add(this.buttonDeptRemove);
-            this.groupBox3.Controls.Add(this.buttonDeptRevise);
-            this.groupBox3.Controls.Add(this.textBoxDeptName1);
-            this.groupBox3.Controls.Add(this.label1);
+            this.groupBox3.Controls.Add(this.DepartmentInCancel);
+            this.groupBox3.Controls.Add(this.DepartmentSerach);
+            this.groupBox3.Controls.Add(this.DepartmentInsert);
+            this.groupBox3.Controls.Add(this.DepartmentDelete);
             this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Location = new System.Drawing.Point(25, 13);
+            this.groupBox3.Controls.Add(this.DepartmentUpdate);
+            this.groupBox3.Location = new System.Drawing.Point(33, 27);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(636, 112);
+            this.groupBox3.Size = new System.Drawing.Size(636, 50);
             this.groupBox3.TabIndex = 106;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "부서관리";
             // 
-            // buttonDeptReister
+            // DepartmentInCancel
             // 
-            this.buttonDeptReister.Location = new System.Drawing.Point(274, 37);
-            this.buttonDeptReister.Name = "buttonDeptReister";
-            this.buttonDeptReister.Size = new System.Drawing.Size(74, 27);
-            this.buttonDeptReister.TabIndex = 107;
-            this.buttonDeptReister.Text = "등록";
-            this.buttonDeptReister.UseVisualStyleBackColor = true;
-            this.buttonDeptReister.Click += new System.EventHandler(this.buttonDeptAdd_Click);
+            this.DepartmentInCancel.Location = new System.Drawing.Point(524, 15);
+            this.DepartmentInCancel.Name = "DepartmentInCancel";
+            this.DepartmentInCancel.Size = new System.Drawing.Size(71, 27);
+            this.DepartmentInCancel.TabIndex = 105;
+            this.DepartmentInCancel.Text = "취소";
+            this.DepartmentInCancel.UseVisualStyleBackColor = true;
+            this.DepartmentInCancel.Click += new System.EventHandler(this.buttonDeptCancel_Click);
             // 
-            // buttonDeptSerach
+            // DepartmentSerach
             // 
-            this.buttonDeptSerach.Location = new System.Drawing.Point(366, 37);
-            this.buttonDeptSerach.Name = "buttonDeptSerach";
-            this.buttonDeptSerach.Size = new System.Drawing.Size(74, 27);
-            this.buttonDeptSerach.TabIndex = 106;
-            this.buttonDeptSerach.Text = "검색";
-            this.buttonDeptSerach.UseVisualStyleBackColor = true;
+            this.DepartmentSerach.Location = new System.Drawing.Point(36, 15);
+            this.DepartmentSerach.Name = "DepartmentSerach";
+            this.DepartmentSerach.Size = new System.Drawing.Size(71, 27);
+            this.DepartmentSerach.TabIndex = 106;
+            this.DepartmentSerach.Text = "검색";
+            this.DepartmentSerach.UseVisualStyleBackColor = true;
+            this.DepartmentSerach.Click += new System.EventHandler(this.DepartmentSerach_Click);
             // 
-            // buttonDeptRemove
+            // DepartmentInsert
             // 
-            this.buttonDeptRemove.Location = new System.Drawing.Point(548, 37);
-            this.buttonDeptRemove.Name = "buttonDeptRemove";
-            this.buttonDeptRemove.Size = new System.Drawing.Size(71, 27);
-            this.buttonDeptRemove.TabIndex = 105;
-            this.buttonDeptRemove.Text = "삭제";
-            this.buttonDeptRemove.UseVisualStyleBackColor = true;
+            this.DepartmentInsert.Location = new System.Drawing.Point(158, 15);
+            this.DepartmentInsert.Name = "DepartmentInsert";
+            this.DepartmentInsert.Size = new System.Drawing.Size(71, 27);
+            this.DepartmentInsert.TabIndex = 104;
+            this.DepartmentInsert.Text = "등록";
+            this.DepartmentInsert.UseVisualStyleBackColor = true;
+            this.DepartmentInsert.Click += new System.EventHandler(this.DepartmentInsert_Click);
             // 
-            // buttonDeptRevise
+            // DepartmentDelete
             // 
-            this.buttonDeptRevise.Location = new System.Drawing.Point(456, 37);
-            this.buttonDeptRevise.Name = "buttonDeptRevise";
-            this.buttonDeptRevise.Size = new System.Drawing.Size(74, 27);
-            this.buttonDeptRevise.TabIndex = 104;
-            this.buttonDeptRevise.Text = "수정";
-            this.buttonDeptRevise.UseVisualStyleBackColor = true;
-            // 
-            // textBoxDeptName1
-            // 
-            this.textBoxDeptName1.Location = new System.Drawing.Point(78, 38);
-            this.textBoxDeptName1.Name = "textBoxDeptName1";
-            this.textBoxDeptName1.Size = new System.Drawing.Size(134, 25);
-            this.textBoxDeptName1.TabIndex = 102;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(218, 39);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 15);
-            this.label1.TabIndex = 1;
+            this.DepartmentDelete.Location = new System.Drawing.Point(402, 15);
+            this.DepartmentDelete.Name = "DepartmentDelete";
+            this.DepartmentDelete.Size = new System.Drawing.Size(71, 27);
+            this.DepartmentDelete.TabIndex = 105;
+            this.DepartmentDelete.Text = "삭제";
+            this.DepartmentDelete.UseVisualStyleBackColor = true;
+            this.DepartmentDelete.Click += new System.EventHandler(this.DepartmentDelete_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 41);
+            this.label3.Location = new System.Drawing.Point(21, 17);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 15);
+            this.label3.Size = new System.Drawing.Size(0, 15);
             this.label3.TabIndex = 0;
-            this.label3.Text = "부서명";
+            // 
+            // DepartmentUpdate
+            // 
+            this.DepartmentUpdate.Location = new System.Drawing.Point(280, 15);
+            this.DepartmentUpdate.Name = "DepartmentUpdate";
+            this.DepartmentUpdate.Size = new System.Drawing.Size(71, 27);
+            this.DepartmentUpdate.TabIndex = 104;
+            this.DepartmentUpdate.Text = "수정";
+            this.DepartmentUpdate.UseVisualStyleBackColor = true;
+            this.DepartmentUpdate.Click += new System.EventHandler(this.DepartmentUpdate_Click);
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.buttonDeptCancel);
-            this.groupBox2.Controls.Add(this.buttonDeptAdd);
-            this.groupBox2.Controls.Add(this.textBoxDeptHead);
-            this.groupBox2.Controls.Add(this.textBoxDeptCode);
-            this.groupBox2.Controls.Add(this.textBoxDeptName2);
+            this.groupBox2.Controls.Add(this.DepartmentID);
+            this.groupBox2.Controls.Add(this.DepartmentHead);
+            this.groupBox2.Controls.Add(this.label22);
+            this.groupBox2.Controls.Add(this.DepartmentCode);
+            this.groupBox2.Controls.Add(this.DepartmentName);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Location = new System.Drawing.Point(25, 145);
+            this.groupBox2.Location = new System.Drawing.Point(33, 116);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(636, 113);
+            this.groupBox2.Size = new System.Drawing.Size(636, 107);
             this.groupBox2.TabIndex = 101;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "부서정보";
             // 
-            // buttonDeptCancel
+            // DepartmentID
             // 
-            this.buttonDeptCancel.Location = new System.Drawing.Point(548, 36);
-            this.buttonDeptCancel.Name = "buttonDeptCancel";
-            this.buttonDeptCancel.Size = new System.Drawing.Size(71, 27);
-            this.buttonDeptCancel.TabIndex = 105;
-            this.buttonDeptCancel.Text = "취소";
-            this.buttonDeptCancel.UseVisualStyleBackColor = true;
-            this.buttonDeptCancel.Click += new System.EventHandler(this.buttonDeptCancel_Click);
+            this.DepartmentID.Location = new System.Drawing.Point(590, 74);
+            this.DepartmentID.Name = "DepartmentID";
+            this.DepartmentID.Size = new System.Drawing.Size(31, 25);
+            this.DepartmentID.TabIndex = 104;
+            this.DepartmentID.Visible = false;
             // 
-            // buttonDeptAdd
+            // DepartmentHead
             // 
-            this.buttonDeptAdd.Location = new System.Drawing.Point(456, 36);
-            this.buttonDeptAdd.Name = "buttonDeptAdd";
-            this.buttonDeptAdd.Size = new System.Drawing.Size(74, 27);
-            this.buttonDeptAdd.TabIndex = 104;
-            this.buttonDeptAdd.Text = "저장";
-            this.buttonDeptAdd.UseVisualStyleBackColor = true;
-            this.buttonDeptAdd.Click += new System.EventHandler(this.buttonDeptAdd_Click_1);
+            this.DepartmentHead.Location = new System.Drawing.Point(487, 43);
+            this.DepartmentHead.Name = "DepartmentHead";
+            this.DepartmentHead.Size = new System.Drawing.Size(134, 25);
+            this.DepartmentHead.TabIndex = 103;
             // 
-            // textBoxDeptHead
+            // label22
             // 
-            this.textBoxDeptHead.Location = new System.Drawing.Point(78, 74);
-            this.textBoxDeptHead.Name = "textBoxDeptHead";
-            this.textBoxDeptHead.Size = new System.Drawing.Size(134, 25);
-            this.textBoxDeptHead.TabIndex = 103;
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(566, 77);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(18, 15);
+            this.label22.TabIndex = 105;
+            this.label22.Text = "id";
+            this.label22.Visible = false;
             // 
-            // textBoxDeptCode
+            // DepartmentCode
             // 
-            this.textBoxDeptCode.Location = new System.Drawing.Point(308, 36);
-            this.textBoxDeptCode.Name = "textBoxDeptCode";
-            this.textBoxDeptCode.Size = new System.Drawing.Size(134, 25);
-            this.textBoxDeptCode.TabIndex = 102;
+            this.DepartmentCode.Location = new System.Drawing.Point(83, 41);
+            this.DepartmentCode.Name = "DepartmentCode";
+            this.DepartmentCode.Size = new System.Drawing.Size(129, 25);
+            this.DepartmentCode.TabIndex = 102;
             // 
-            // textBoxDeptName2
+            // DepartmentName
             // 
-            this.textBoxDeptName2.Location = new System.Drawing.Point(78, 38);
-            this.textBoxDeptName2.Name = "textBoxDeptName2";
-            this.textBoxDeptName2.Size = new System.Drawing.Size(134, 25);
-            this.textBoxDeptName2.TabIndex = 102;
+            this.DepartmentName.Location = new System.Drawing.Point(289, 43);
+            this.DepartmentName.Name = "DepartmentName";
+            this.DepartmentName.Size = new System.Drawing.Size(117, 25);
+            this.DepartmentName.TabIndex = 102;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(20, 79);
+            this.label12.Location = new System.Drawing.Point(429, 48);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(52, 15);
             this.label12.TabIndex = 1;
@@ -704,7 +723,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(240, 41);
+            this.label4.Location = new System.Drawing.Point(15, 46);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 15);
             this.label4.TabIndex = 0;
@@ -713,7 +732,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(20, 41);
+            this.label5.Location = new System.Drawing.Point(231, 46);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 15);
             this.label5.TabIndex = 0;
@@ -946,19 +965,47 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(178, 404);
+            this.dataGridView1.Location = new System.Drawing.Point(182, 404);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 27;
-            this.dataGridView1.Size = new System.Drawing.Size(718, 237);
+            this.dataGridView1.Size = new System.Drawing.Size(722, 237);
             this.dataGridView1.TabIndex = 93;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            // 
+            // dataGridViewDepartment
+            // 
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("굴림", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewDepartment.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewDepartment.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDepartment.Location = new System.Drawing.Point(182, 404);
+            this.dataGridViewDepartment.Name = "dataGridViewDepartment";
+            this.dataGridViewDepartment.RowHeadersWidth = 51;
+            this.dataGridViewDepartment.RowTemplate.Height = 27;
+            this.dataGridViewDepartment.Size = new System.Drawing.Size(722, 237);
+            this.dataGridViewDepartment.TabIndex = 94;
+            this.dataGridViewDepartment.Visible = false;
+            this.dataGridViewDepartment.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewDepartment_CellClick);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(421, 143);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(65, 25);
+            this.textBox1.TabIndex = 102;
             // 
             // PersonnelForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 653);
+            this.Controls.Add(this.dataGridViewDepartment);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tabControl1);
@@ -997,6 +1044,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDepartment)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1008,12 +1056,12 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage 기본정보;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button EmployeeInsert;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBoxSThome;
+        private System.Windows.Forms.TextBox EmployeeAddress;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBoxSTname;
+        private System.Windows.Forms.TextBox EmployeeName;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TabPage 출근부;
@@ -1033,51 +1081,54 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBoxSTcode;
+        private System.Windows.Forms.ComboBox EmployeeDepartment;
+        private System.Windows.Forms.ComboBox EmployeeRank;
+        private System.Windows.Forms.TextBox EmployeeCode;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBoxSThom2;
+        private System.Windows.Forms.TextBox EmployeeDetailedAddress;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBoxendMinute;
-        private System.Windows.Forms.TextBox textBoxstartMinute;
-        private System.Windows.Forms.TextBox textBoxendHour;
+        private System.Windows.Forms.TextBox EndMinute;
+        private System.Windows.Forms.TextBox StartMinute;
+        private System.Windows.Forms.TextBox EndHour;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBoxstartHour;
+        private System.Windows.Forms.TextBox StartHour;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBoxSTage;
+        private System.Windows.Forms.TextBox EmployeeAge;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button buttonread;
-        private System.Windows.Forms.Button buttonadd;
+        private System.Windows.Forms.Button AttendanceRead;
+        private System.Windows.Forms.Button AttendanceInsert;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TabPage 부서관리;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.ComboBox comboBoxStaffSearch;
-        private System.Windows.Forms.Button buttonStaffSearch;
-        private System.Windows.Forms.TextBox textBoxStaffSearch;
+        private System.Windows.Forms.Button EmployeeUpdate;
+        private System.Windows.Forms.Button EmployeeDelete;
+        private System.Windows.Forms.ComboBox EmployeeSearchComboBox;
+        private System.Windows.Forms.Button EmployeeSearch;
+        private System.Windows.Forms.TextBox EmployeeSearchTextBox;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button buttonDeptCancel;
-        private System.Windows.Forms.Button buttonDeptAdd;
-        private System.Windows.Forms.TextBox textBoxDeptHead;
-        private System.Windows.Forms.TextBox textBoxDeptName2;
+        private System.Windows.Forms.Button DepartmentInCancel;
+        private System.Windows.Forms.Button DepartmentInsert;
+        private System.Windows.Forms.TextBox DepartmentHead;
+        private System.Windows.Forms.TextBox DepartmentName;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button buttonDeptReister;
-        private System.Windows.Forms.Button buttonDeptSerach;
-        private System.Windows.Forms.Button buttonDeptRemove;
-        private System.Windows.Forms.Button buttonDeptRevise;
-        private System.Windows.Forms.TextBox textBoxDeptName1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button DepartmentSerach;
+        private System.Windows.Forms.Button DepartmentDelete;
+        private System.Windows.Forms.Button DepartmentUpdate;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBoxDeptCode;
+        private System.Windows.Forms.TextBox DepartmentCode;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox DepartmentID;
+        private System.Windows.Forms.TextBox EmployeeID;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.DataGridView dataGridViewDepartment;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

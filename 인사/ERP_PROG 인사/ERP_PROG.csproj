@@ -113,7 +113,7 @@
     <Compile Include="ApprovalForm.Designer.cs">
       <DependentUpon>ApprovalForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ERP.cs" />
+    <Compile Include="ERPManager.cs" />
     <Compile Include="NormalForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +126,7 @@
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Person.cs" />
     <Compile Include="PersonnelForm.cs">
       <SubType>Form</SubType>
     </Compile>
