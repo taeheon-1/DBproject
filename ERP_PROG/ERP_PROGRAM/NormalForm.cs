@@ -37,25 +37,30 @@ namespace ERP_PROG
         private void button_business_Click(object sender, EventArgs e)
         {
             (new TaskMain()).Show();
-            this.Close();
+            this.Visible = false;
         }
 
         private void button_personnel_Click(object sender, EventArgs e)
         {
             (new PersonnelForm()).Show();
-            this.Close();
+            this.Visible = false;
         }
 
         private void button_message_Click(object sender, EventArgs e)
         {
             (new msgview()).Show();
-            this.Close();
+            this.Visible = false;
         }
 
         private void button_approval_Click_1(object sender, EventArgs e)
         {
-            (new ApprovalForm()).Show();
-            this.Close();
+            (new ApprovalNormalForm()).Show();
+            this.Visible = false;
+        }
+
+        private void NormalForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

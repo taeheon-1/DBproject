@@ -31,25 +31,7 @@ namespace ERP_PROG
 
         private void ApprovalNormalForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            ApprovalForm normal = new ApprovalForm();
-            normal.Show();
+            (new NormalForm()).Visible = true;
         }
-
-        private void button_personnel_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void button_bussiness_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void button_approval_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void button_message_Click(object sender, EventArgs e)
-        {
-        }
-
     }
 }

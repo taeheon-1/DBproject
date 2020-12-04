@@ -130,24 +130,7 @@ namespace ERP_PROG
 
         private void msgview_FormClosed(object sender, FormClosedEventArgs e)
         {
-            NormalForm normal = new NormalForm();
-            normal.Show();
-        }
-
-        private void button_business_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void button_approval_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void button_message_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void button_personnel_Click(object sender, EventArgs e)
-        {
+            (new NormalForm()).Visible = true;
         }
     }
 }

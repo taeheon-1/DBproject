@@ -28,14 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(msgview));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button_message = new System.Windows.Forms.Button();
-            this.button_business = new System.Windows.Forms.Button();
-            this.button_approval = new System.Windows.Forms.Button();
-            this.button_personnel = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.textBoxSearchsender = new System.Windows.Forms.TextBox();
@@ -50,16 +44,7 @@
             this.btn_Msgwrite = new System.Windows.Forms.Button();
             this.btn_Reload = new System.Windows.Forms.Button();
             this.labelSendview = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -83,83 +68,6 @@
             this.label2.Size = new System.Drawing.Size(115, 16);
             this.label2.TabIndex = 2;
             this.label2.Text = "ERP Program";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel2.Controls.Add(this.pictureBox5);
-            this.panel2.Controls.Add(this.pictureBox6);
-            this.panel2.Controls.Add(this.button_message);
-            this.panel2.Controls.Add(this.pictureBox7);
-            this.panel2.Controls.Add(this.button_business);
-            this.panel2.Controls.Add(this.pictureBox8);
-            this.panel2.Controls.Add(this.button_approval);
-            this.panel2.Controls.Add(this.button_personnel);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 70);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(106, 591);
-            this.panel2.TabIndex = 3;
-            // 
-            // button_message
-            // 
-            this.button_message.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button_message.ForeColor = System.Drawing.Color.Black;
-            this.button_message.Location = new System.Drawing.Point(0, 354);
-            this.button_message.Margin = new System.Windows.Forms.Padding(0);
-            this.button_message.Name = "button_message";
-            this.button_message.Padding = new System.Windows.Forms.Padding(0, 0, 0, 15);
-            this.button_message.Size = new System.Drawing.Size(106, 120);
-            this.button_message.TabIndex = 5;
-            this.button_message.Text = "쪽지";
-            this.button_message.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button_message.UseVisualStyleBackColor = false;
-            this.button_message.Click += new System.EventHandler(this.button_message_Click);
-            // 
-            // button_business
-            // 
-            this.button_business.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button_business.ForeColor = System.Drawing.Color.Black;
-            this.button_business.Location = new System.Drawing.Point(0, 118);
-            this.button_business.Margin = new System.Windows.Forms.Padding(0);
-            this.button_business.Name = "button_business";
-            this.button_business.Padding = new System.Windows.Forms.Padding(0, 0, 0, 15);
-            this.button_business.Size = new System.Drawing.Size(106, 120);
-            this.button_business.TabIndex = 4;
-            this.button_business.Text = "업무";
-            this.button_business.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button_business.UseVisualStyleBackColor = false;
-            this.button_business.Click += new System.EventHandler(this.button_business_Click);
-            // 
-            // button_approval
-            // 
-            this.button_approval.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button_approval.ForeColor = System.Drawing.Color.Black;
-            this.button_approval.Location = new System.Drawing.Point(0, 236);
-            this.button_approval.Margin = new System.Windows.Forms.Padding(0);
-            this.button_approval.Name = "button_approval";
-            this.button_approval.Padding = new System.Windows.Forms.Padding(0, 0, 0, 15);
-            this.button_approval.Size = new System.Drawing.Size(106, 120);
-            this.button_approval.TabIndex = 3;
-            this.button_approval.Text = "결재";
-            this.button_approval.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button_approval.UseVisualStyleBackColor = false;
-            this.button_approval.Click += new System.EventHandler(this.button_approval_Click);
-            // 
-            // button_personnel
-            // 
-            this.button_personnel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button_personnel.ForeColor = System.Drawing.Color.Black;
-            this.button_personnel.Location = new System.Drawing.Point(0, 0);
-            this.button_personnel.Margin = new System.Windows.Forms.Padding(0);
-            this.button_personnel.Name = "button_personnel";
-            this.button_personnel.Padding = new System.Windows.Forms.Padding(0, 0, 0, 15);
-            this.button_personnel.Size = new System.Drawing.Size(106, 120);
-            this.button_personnel.TabIndex = 2;
-            this.button_personnel.Text = "인사";
-            this.button_personnel.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button_personnel.UseVisualStyleBackColor = false;
-            this.button_personnel.Click += new System.EventHandler(this.button_personnel_Click);
             // 
             // label3
             // 
@@ -293,50 +201,6 @@
             this.labelSendview.Text = "보낸 쪽지함";
             this.labelSendview.Click += new System.EventHandler(this.labelSendview_Click);
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(24, 368);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(64, 55);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 21;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(24, 251);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(64, 55);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 20;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(24, 132);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(64, 55);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 19;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(24, 16);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(64, 55);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 18;
-            this.pictureBox8.TabStop = false;
-            // 
             // msgview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -353,7 +217,6 @@
             this.Controls.Add(this.textBoxSearchsender);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "msgview";
             this.Text = "msgview";
@@ -361,11 +224,6 @@
             this.Load += new System.EventHandler(this.msgview_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -375,11 +233,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button_message;
-        private System.Windows.Forms.Button button_business;
-        private System.Windows.Forms.Button button_approval;
-        private System.Windows.Forms.Button button_personnel;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBoxSearchsender;
@@ -394,9 +247,5 @@
         private System.Windows.Forms.ColumnHeader msgID;
         private System.Windows.Forms.Button btn_Reload;
         private System.Windows.Forms.Label labelSendview;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
     }
 }

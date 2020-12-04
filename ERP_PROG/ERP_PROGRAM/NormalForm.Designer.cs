@@ -216,6 +216,7 @@
             this.Name = "NormalForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ERP Program";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.NormalForm_FormClosed);
             this.Load += new System.EventHandler(this.NormalForm_Load);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
