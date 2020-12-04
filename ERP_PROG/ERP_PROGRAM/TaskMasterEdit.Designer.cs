@@ -52,7 +52,7 @@
             // 
             this.listBoxLargeCategory.FormattingEnabled = true;
             this.listBoxLargeCategory.ItemHeight = 12;
-            this.listBoxLargeCategory.Location = new System.Drawing.Point(171, 129);
+            this.listBoxLargeCategory.Location = new System.Drawing.Point(143, 129);
             this.listBoxLargeCategory.Name = "listBoxLargeCategory";
             this.listBoxLargeCategory.Size = new System.Drawing.Size(183, 472);
             this.listBoxLargeCategory.TabIndex = 6;
@@ -61,7 +61,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(171, 102);
+            this.label1.Location = new System.Drawing.Point(143, 102);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(79, 12);
             this.label1.TabIndex = 7;
@@ -70,7 +70,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(399, 102);
+            this.label3.Location = new System.Drawing.Point(371, 102);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(107, 12);
             this.label3.TabIndex = 8;
@@ -79,7 +79,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(626, 103);
+            this.label4.Location = new System.Drawing.Point(598, 103);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(79, 12);
             this.label4.TabIndex = 9;
@@ -89,7 +89,7 @@
             // 
             this.listBoxMediumCategory.FormattingEnabled = true;
             this.listBoxMediumCategory.ItemHeight = 12;
-            this.listBoxMediumCategory.Location = new System.Drawing.Point(401, 129);
+            this.listBoxMediumCategory.Location = new System.Drawing.Point(373, 129);
             this.listBoxMediumCategory.Name = "listBoxMediumCategory";
             this.listBoxMediumCategory.Size = new System.Drawing.Size(183, 472);
             this.listBoxMediumCategory.TabIndex = 10;
@@ -99,7 +99,7 @@
             // 
             this.listBoxSmallCategory.FormattingEnabled = true;
             this.listBoxSmallCategory.ItemHeight = 12;
-            this.listBoxSmallCategory.Location = new System.Drawing.Point(628, 130);
+            this.listBoxSmallCategory.Location = new System.Drawing.Point(600, 130);
             this.listBoxSmallCategory.Name = "listBoxSmallCategory";
             this.listBoxSmallCategory.Size = new System.Drawing.Size(183, 472);
             this.listBoxSmallCategory.TabIndex = 11;
@@ -108,7 +108,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(853, 263);
+            this.label5.Location = new System.Drawing.Point(825, 263);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(153, 12);
             this.label5.TabIndex = 12;
@@ -117,7 +117,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(853, 323);
+            this.label6.Location = new System.Drawing.Point(825, 323);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(153, 12);
             this.label6.TabIndex = 13;
@@ -126,7 +126,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(853, 383);
+            this.label7.Location = new System.Drawing.Point(825, 383);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(153, 12);
             this.label7.TabIndex = 14;
@@ -134,28 +134,28 @@
             // 
             // textBoxEditBigcat
             // 
-            this.textBoxEditBigcat.Location = new System.Drawing.Point(855, 278);
+            this.textBoxEditBigcat.Location = new System.Drawing.Point(827, 278);
             this.textBoxEditBigcat.Name = "textBoxEditBigcat";
             this.textBoxEditBigcat.Size = new System.Drawing.Size(151, 21);
             this.textBoxEditBigcat.TabIndex = 15;
             // 
             // textBoxEditMidcat
             // 
-            this.textBoxEditMidcat.Location = new System.Drawing.Point(855, 338);
+            this.textBoxEditMidcat.Location = new System.Drawing.Point(827, 338);
             this.textBoxEditMidcat.Name = "textBoxEditMidcat";
             this.textBoxEditMidcat.Size = new System.Drawing.Size(151, 21);
             this.textBoxEditMidcat.TabIndex = 16;
             // 
             // textBoxEditSmallcat
             // 
-            this.textBoxEditSmallcat.Location = new System.Drawing.Point(855, 398);
+            this.textBoxEditSmallcat.Location = new System.Drawing.Point(827, 398);
             this.textBoxEditSmallcat.Name = "textBoxEditSmallcat";
             this.textBoxEditSmallcat.Size = new System.Drawing.Size(151, 21);
             this.textBoxEditSmallcat.TabIndex = 17;
             // 
             // buttonMasterAdd
             // 
-            this.buttonMasterAdd.Location = new System.Drawing.Point(1023, 270);
+            this.buttonMasterAdd.Location = new System.Drawing.Point(995, 270);
             this.buttonMasterAdd.Name = "buttonMasterAdd";
             this.buttonMasterAdd.Size = new System.Drawing.Size(131, 35);
             this.buttonMasterAdd.TabIndex = 18;
@@ -165,7 +165,7 @@
             // 
             // buttonMasterDelete
             // 
-            this.buttonMasterDelete.Location = new System.Drawing.Point(1023, 330);
+            this.buttonMasterDelete.Location = new System.Drawing.Point(995, 330);
             this.buttonMasterDelete.Name = "buttonMasterDelete";
             this.buttonMasterDelete.Size = new System.Drawing.Size(131, 35);
             this.buttonMasterDelete.TabIndex = 19;
@@ -175,7 +175,7 @@
             // 
             // buttonInputMasterClear
             // 
-            this.buttonInputMasterClear.Location = new System.Drawing.Point(1023, 390);
+            this.buttonInputMasterClear.Location = new System.Drawing.Point(995, 390);
             this.buttonInputMasterClear.Name = "buttonInputMasterClear";
             this.buttonInputMasterClear.Size = new System.Drawing.Size(131, 35);
             this.buttonInputMasterClear.TabIndex = 20;

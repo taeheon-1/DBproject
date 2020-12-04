@@ -53,7 +53,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(793, 135);
+            this.label5.Location = new System.Drawing.Point(750, 143);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(85, 12);
             this.label5.TabIndex = 11;
@@ -62,7 +62,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(793, 203);
+            this.label6.Location = new System.Drawing.Point(750, 211);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(85, 12);
             this.label6.TabIndex = 12;
@@ -72,7 +72,7 @@
             // 
             this.dateTimePickerTaskStart.CustomFormat = "yyyy-MM-dd HH:mm";
             this.dateTimePickerTaskStart.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePickerTaskStart.Location = new System.Drawing.Point(795, 150);
+            this.dateTimePickerTaskStart.Location = new System.Drawing.Point(752, 158);
             this.dateTimePickerTaskStart.Name = "dateTimePickerTaskStart";
             this.dateTimePickerTaskStart.Size = new System.Drawing.Size(356, 21);
             this.dateTimePickerTaskStart.TabIndex = 16;
@@ -81,7 +81,7 @@
             // 
             this.dateTimePickerTaskEnd.CustomFormat = "yyyy-MM-dd HH:mm";
             this.dateTimePickerTaskEnd.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePickerTaskEnd.Location = new System.Drawing.Point(795, 220);
+            this.dateTimePickerTaskEnd.Location = new System.Drawing.Point(752, 228);
             this.dateTimePickerTaskEnd.Name = "dateTimePickerTaskEnd";
             this.dateTimePickerTaskEnd.Size = new System.Drawing.Size(356, 21);
             this.dateTimePickerTaskEnd.TabIndex = 21;
@@ -89,7 +89,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(146, 378);
+            this.label11.Location = new System.Drawing.Point(103, 386);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(57, 12);
             this.label11.TabIndex = 26;
@@ -97,7 +97,7 @@
             // 
             // textBoxTaskDetail
             // 
-            this.textBoxTaskDetail.Location = new System.Drawing.Point(148, 396);
+            this.textBoxTaskDetail.Location = new System.Drawing.Point(105, 404);
             this.textBoxTaskDetail.Multiline = true;
             this.textBoxTaskDetail.Name = "textBoxTaskDetail";
             this.textBoxTaskDetail.Size = new System.Drawing.Size(1004, 166);
@@ -108,7 +108,7 @@
             this.buttonModTask.BackColor = System.Drawing.Color.Black;
             this.buttonModTask.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonModTask.ForeColor = System.Drawing.Color.White;
-            this.buttonModTask.Location = new System.Drawing.Point(954, 580);
+            this.buttonModTask.Location = new System.Drawing.Point(911, 588);
             this.buttonModTask.Name = "buttonModTask";
             this.buttonModTask.Size = new System.Drawing.Size(198, 30);
             this.buttonModTask.TabIndex = 28;
@@ -141,7 +141,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(212, 232);
+            this.label7.Location = new System.Drawing.Point(169, 240);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(69, 12);
             this.label7.TabIndex = 32;
@@ -150,7 +150,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(385, 232);
+            this.label8.Location = new System.Drawing.Point(342, 240);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(69, 12);
             this.label8.TabIndex = 33;
@@ -158,14 +158,14 @@
             // 
             // textBoxWorker
             // 
-            this.textBoxWorker.Location = new System.Drawing.Point(214, 248);
+            this.textBoxWorker.Location = new System.Drawing.Point(171, 256);
             this.textBoxWorker.Name = "textBoxWorker";
             this.textBoxWorker.Size = new System.Drawing.Size(121, 21);
             this.textBoxWorker.TabIndex = 34;
             // 
             // textBoxWrittenBy
             // 
-            this.textBoxWrittenBy.Location = new System.Drawing.Point(387, 248);
+            this.textBoxWrittenBy.Location = new System.Drawing.Point(344, 256);
             this.textBoxWrittenBy.Name = "textBoxWrittenBy";
             this.textBoxWrittenBy.Size = new System.Drawing.Size(121, 21);
             this.textBoxWrittenBy.TabIndex = 35;
@@ -173,7 +173,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(212, 115);
+            this.label1.Location = new System.Drawing.Point(169, 123);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 12);
             this.label1.TabIndex = 36;
@@ -182,7 +182,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(385, 115);
+            this.label3.Location = new System.Drawing.Point(342, 123);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 12);
             this.label3.TabIndex = 37;
@@ -191,7 +191,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(566, 115);
+            this.label4.Location = new System.Drawing.Point(523, 123);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(57, 12);
             this.label4.TabIndex = 38;
@@ -200,7 +200,7 @@
             // comboBoxTaskBigCat
             // 
             this.comboBoxTaskBigCat.FormattingEnabled = true;
-            this.comboBoxTaskBigCat.Location = new System.Drawing.Point(214, 135);
+            this.comboBoxTaskBigCat.Location = new System.Drawing.Point(171, 143);
             this.comboBoxTaskBigCat.Name = "comboBoxTaskBigCat";
             this.comboBoxTaskBigCat.Size = new System.Drawing.Size(121, 20);
             this.comboBoxTaskBigCat.TabIndex = 39;
@@ -209,7 +209,7 @@
             // comboBoxTaskMidCat
             // 
             this.comboBoxTaskMidCat.FormattingEnabled = true;
-            this.comboBoxTaskMidCat.Location = new System.Drawing.Point(387, 135);
+            this.comboBoxTaskMidCat.Location = new System.Drawing.Point(344, 143);
             this.comboBoxTaskMidCat.Name = "comboBoxTaskMidCat";
             this.comboBoxTaskMidCat.Size = new System.Drawing.Size(121, 20);
             this.comboBoxTaskMidCat.TabIndex = 40;
@@ -218,7 +218,7 @@
             // comboBoxTaskSmallCat
             // 
             this.comboBoxTaskSmallCat.FormattingEnabled = true;
-            this.comboBoxTaskSmallCat.Location = new System.Drawing.Point(568, 135);
+            this.comboBoxTaskSmallCat.Location = new System.Drawing.Point(525, 143);
             this.comboBoxTaskSmallCat.Name = "comboBoxTaskSmallCat";
             this.comboBoxTaskSmallCat.Size = new System.Drawing.Size(121, 20);
             this.comboBoxTaskSmallCat.TabIndex = 41;

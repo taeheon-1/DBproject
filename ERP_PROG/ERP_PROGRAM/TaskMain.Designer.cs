@@ -81,7 +81,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(133, 71);
+            this.label1.Location = new System.Drawing.Point(102, 78);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 12);
             this.label1.TabIndex = 4;
@@ -102,7 +102,7 @@
             this.listViewWorkDisplay.FullRowSelect = true;
             this.listViewWorkDisplay.GridLines = true;
             this.listViewWorkDisplay.HideSelection = false;
-            this.listViewWorkDisplay.Location = new System.Drawing.Point(135, 99);
+            this.listViewWorkDisplay.Location = new System.Drawing.Point(104, 106);
             this.listViewWorkDisplay.Name = "listViewWorkDisplay";
             this.listViewWorkDisplay.Size = new System.Drawing.Size(1023, 251);
             this.listViewWorkDisplay.TabIndex = 5;
@@ -160,7 +160,7 @@
             this.groupBox1.Controls.Add(this.radioButtonSearchOptionWrittenDate);
             this.groupBox1.Controls.Add(this.textBoxTaskSearch);
             this.groupBox1.Controls.Add(this.buttonTaskSearch);
-            this.groupBox1.Location = new System.Drawing.Point(135, 412);
+            this.groupBox1.Location = new System.Drawing.Point(104, 419);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(349, 214);
             this.groupBox1.TabIndex = 7;
@@ -225,7 +225,7 @@
             this.buttonGoTaskMod.BackColor = System.Drawing.Color.Black;
             this.buttonGoTaskMod.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonGoTaskMod.ForeColor = System.Drawing.Color.White;
-            this.buttonGoTaskMod.Location = new System.Drawing.Point(756, 358);
+            this.buttonGoTaskMod.Location = new System.Drawing.Point(725, 365);
             this.buttonGoTaskMod.Name = "buttonGoTaskMod";
             this.buttonGoTaskMod.Size = new System.Drawing.Size(198, 30);
             this.buttonGoTaskMod.TabIndex = 9;
@@ -238,7 +238,7 @@
             this.buttonGoTaskAdd.BackColor = System.Drawing.Color.Black;
             this.buttonGoTaskAdd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonGoTaskAdd.ForeColor = System.Drawing.Color.White;
-            this.buttonGoTaskAdd.Location = new System.Drawing.Point(552, 358);
+            this.buttonGoTaskAdd.Location = new System.Drawing.Point(521, 365);
             this.buttonGoTaskAdd.Name = "buttonGoTaskAdd";
             this.buttonGoTaskAdd.Size = new System.Drawing.Size(198, 30);
             this.buttonGoTaskAdd.TabIndex = 10;
@@ -251,7 +251,7 @@
             this.buttonGoMasterEdit.BackColor = System.Drawing.Color.Black;
             this.buttonGoMasterEdit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonGoMasterEdit.ForeColor = System.Drawing.Color.White;
-            this.buttonGoMasterEdit.Location = new System.Drawing.Point(960, 60);
+            this.buttonGoMasterEdit.Location = new System.Drawing.Point(929, 67);
             this.buttonGoMasterEdit.Name = "buttonGoMasterEdit";
             this.buttonGoMasterEdit.Size = new System.Drawing.Size(198, 30);
             this.buttonGoMasterEdit.TabIndex = 13;
@@ -264,7 +264,7 @@
             this.buttonReturn.BackColor = System.Drawing.Color.Black;
             this.buttonReturn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonReturn.ForeColor = System.Drawing.Color.White;
-            this.buttonReturn.Location = new System.Drawing.Point(830, 60);
+            this.buttonReturn.Location = new System.Drawing.Point(799, 67);
             this.buttonReturn.Name = "buttonReturn";
             this.buttonReturn.Size = new System.Drawing.Size(101, 30);
             this.buttonReturn.TabIndex = 14;
@@ -277,7 +277,7 @@
             this.buttonTaskDelete.BackColor = System.Drawing.Color.Black;
             this.buttonTaskDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonTaskDelete.ForeColor = System.Drawing.Color.White;
-            this.buttonTaskDelete.Location = new System.Drawing.Point(960, 358);
+            this.buttonTaskDelete.Location = new System.Drawing.Point(929, 365);
             this.buttonTaskDelete.Name = "buttonTaskDelete";
             this.buttonTaskDelete.Size = new System.Drawing.Size(198, 30);
             this.buttonTaskDelete.TabIndex = 15;
