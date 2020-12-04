@@ -211,6 +211,7 @@
             // 
             this.buttonTaskSearch.BackColor = System.Drawing.Color.Black;
             this.buttonTaskSearch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTaskSearch.Font = new System.Drawing.Font("굴림", 9F);
             this.buttonTaskSearch.ForeColor = System.Drawing.Color.White;
             this.buttonTaskSearch.Location = new System.Drawing.Point(232, 22);
             this.buttonTaskSearch.Name = "buttonTaskSearch";
@@ -224,6 +225,7 @@
             // 
             this.buttonGoTaskMod.BackColor = System.Drawing.Color.Black;
             this.buttonGoTaskMod.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonGoTaskMod.Font = new System.Drawing.Font("굴림", 9F);
             this.buttonGoTaskMod.ForeColor = System.Drawing.Color.White;
             this.buttonGoTaskMod.Location = new System.Drawing.Point(725, 365);
             this.buttonGoTaskMod.Name = "buttonGoTaskMod";
@@ -237,6 +239,7 @@
             // 
             this.buttonGoTaskAdd.BackColor = System.Drawing.Color.Black;
             this.buttonGoTaskAdd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonGoTaskAdd.Font = new System.Drawing.Font("굴림", 9F);
             this.buttonGoTaskAdd.ForeColor = System.Drawing.Color.White;
             this.buttonGoTaskAdd.Location = new System.Drawing.Point(521, 365);
             this.buttonGoTaskAdd.Name = "buttonGoTaskAdd";
@@ -250,6 +253,7 @@
             // 
             this.buttonGoMasterEdit.BackColor = System.Drawing.Color.Black;
             this.buttonGoMasterEdit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonGoMasterEdit.Font = new System.Drawing.Font("굴림", 9F);
             this.buttonGoMasterEdit.ForeColor = System.Drawing.Color.White;
             this.buttonGoMasterEdit.Location = new System.Drawing.Point(929, 67);
             this.buttonGoMasterEdit.Name = "buttonGoMasterEdit";
@@ -263,12 +267,13 @@
             // 
             this.buttonReturn.BackColor = System.Drawing.Color.Black;
             this.buttonReturn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonReturn.Font = new System.Drawing.Font("굴림", 9F);
             this.buttonReturn.ForeColor = System.Drawing.Color.White;
             this.buttonReturn.Location = new System.Drawing.Point(799, 67);
             this.buttonReturn.Name = "buttonReturn";
             this.buttonReturn.Size = new System.Drawing.Size(101, 30);
             this.buttonReturn.TabIndex = 14;
-            this.buttonReturn.Text = "되돌리기";
+            this.buttonReturn.Text = "새로고침";
             this.buttonReturn.UseVisualStyleBackColor = false;
             this.buttonReturn.Click += new System.EventHandler(this.buttonReturn_Click);
             // 
@@ -276,6 +281,7 @@
             // 
             this.buttonTaskDelete.BackColor = System.Drawing.Color.Black;
             this.buttonTaskDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTaskDelete.Font = new System.Drawing.Font("굴림", 9F);
             this.buttonTaskDelete.ForeColor = System.Drawing.Color.White;
             this.buttonTaskDelete.Location = new System.Drawing.Point(929, 365);
             this.buttonTaskDelete.Name = "buttonTaskDelete";

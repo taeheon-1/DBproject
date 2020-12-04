@@ -257,23 +257,29 @@ namespace ERP_PROG
             // 
             // AnnuityInitialization
             // 
+            this.AnnuityInitialization.BackColor = System.Drawing.Color.Black;
+            this.AnnuityInitialization.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.AnnuityInitialization.ForeColor = System.Drawing.Color.White;
             this.AnnuityInitialization.Location = new System.Drawing.Point(527, 18);
             this.AnnuityInitialization.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AnnuityInitialization.Name = "AnnuityInitialization";
             this.AnnuityInitialization.Size = new System.Drawing.Size(66, 20);
             this.AnnuityInitialization.TabIndex = 3;
             this.AnnuityInitialization.Text = "초기화";
-            this.AnnuityInitialization.UseVisualStyleBackColor = true;
+            this.AnnuityInitialization.UseVisualStyleBackColor = false;
             // 
             // AnnuityCalculation
             // 
+            this.AnnuityCalculation.BackColor = System.Drawing.Color.Black;
+            this.AnnuityCalculation.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.AnnuityCalculation.ForeColor = System.Drawing.Color.White;
             this.AnnuityCalculation.Location = new System.Drawing.Point(413, 18);
             this.AnnuityCalculation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AnnuityCalculation.Name = "AnnuityCalculation";
             this.AnnuityCalculation.Size = new System.Drawing.Size(66, 20);
             this.AnnuityCalculation.TabIndex = 2;
             this.AnnuityCalculation.Text = "계산";
-            this.AnnuityCalculation.UseVisualStyleBackColor = true;
+            this.AnnuityCalculation.UseVisualStyleBackColor = false;
             this.AnnuityCalculation.Click += new System.EventHandler(this.AnnuityCalculation_Click);
             // 
             // AnnuitySalary

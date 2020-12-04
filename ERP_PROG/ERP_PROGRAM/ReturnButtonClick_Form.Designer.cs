@@ -64,13 +64,16 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button1.Location = new System.Drawing.Point(291, 204);
+            this.button1.BackColor = System.Drawing.Color.Black;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("굴림", 9F);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(291, 218);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 54);
+            this.button1.Size = new System.Drawing.Size(101, 40);
             this.button1.TabIndex = 3;
             this.button1.Text = "메모등록";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ReturnButtonClick_Form

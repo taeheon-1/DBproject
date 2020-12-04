@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.기본정보 = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
@@ -219,35 +219,44 @@
             // 
             // EmployeeClear
             // 
+            this.EmployeeClear.BackColor = System.Drawing.Color.Black;
+            this.EmployeeClear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.EmployeeClear.ForeColor = System.Drawing.Color.White;
             this.EmployeeClear.Location = new System.Drawing.Point(487, 19);
             this.EmployeeClear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.EmployeeClear.Name = "EmployeeClear";
             this.EmployeeClear.Size = new System.Drawing.Size(60, 22);
             this.EmployeeClear.TabIndex = 93;
             this.EmployeeClear.Text = "취소";
-            this.EmployeeClear.UseVisualStyleBackColor = true;
+            this.EmployeeClear.UseVisualStyleBackColor = false;
             this.EmployeeClear.Click += new System.EventHandler(this.EmployeeClear_Click);
             // 
             // EmployeeUpdate
             // 
+            this.EmployeeUpdate.BackColor = System.Drawing.Color.Black;
+            this.EmployeeUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.EmployeeUpdate.ForeColor = System.Drawing.Color.White;
             this.EmployeeUpdate.Location = new System.Drawing.Point(347, 19);
             this.EmployeeUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.EmployeeUpdate.Name = "EmployeeUpdate";
             this.EmployeeUpdate.Size = new System.Drawing.Size(60, 22);
             this.EmployeeUpdate.TabIndex = 92;
             this.EmployeeUpdate.Text = "수정";
-            this.EmployeeUpdate.UseVisualStyleBackColor = true;
+            this.EmployeeUpdate.UseVisualStyleBackColor = false;
             this.EmployeeUpdate.Click += new System.EventHandler(this.EmployeeUpdate_Click);
             // 
             // EmployeeDelete
             // 
+            this.EmployeeDelete.BackColor = System.Drawing.Color.Black;
+            this.EmployeeDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.EmployeeDelete.ForeColor = System.Drawing.Color.White;
             this.EmployeeDelete.Location = new System.Drawing.Point(412, 19);
             this.EmployeeDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.EmployeeDelete.Name = "EmployeeDelete";
             this.EmployeeDelete.Size = new System.Drawing.Size(60, 22);
             this.EmployeeDelete.TabIndex = 91;
             this.EmployeeDelete.Text = "삭제";
-            this.EmployeeDelete.UseVisualStyleBackColor = true;
+            this.EmployeeDelete.UseVisualStyleBackColor = false;
             this.EmployeeDelete.Click += new System.EventHandler(this.EmployeeDelete_Click);
             // 
             // EmployeeSearchComboBox
@@ -265,13 +274,16 @@
             // 
             // EmployeeSearch
             // 
+            this.EmployeeSearch.BackColor = System.Drawing.Color.Black;
+            this.EmployeeSearch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.EmployeeSearch.ForeColor = System.Drawing.Color.White;
             this.EmployeeSearch.Location = new System.Drawing.Point(281, 19);
             this.EmployeeSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.EmployeeSearch.Name = "EmployeeSearch";
             this.EmployeeSearch.Size = new System.Drawing.Size(60, 22);
             this.EmployeeSearch.TabIndex = 90;
             this.EmployeeSearch.Text = "검색";
-            this.EmployeeSearch.UseVisualStyleBackColor = true;
+            this.EmployeeSearch.UseVisualStyleBackColor = false;
             this.EmployeeSearch.Click += new System.EventHandler(this.buttonStaffSearch_Click);
             // 
             // EmployeeSearchTextBox
@@ -323,13 +335,16 @@
             // 
             // EmployeeInsert
             // 
+            this.EmployeeInsert.BackColor = System.Drawing.Color.Black;
+            this.EmployeeInsert.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.EmployeeInsert.ForeColor = System.Drawing.Color.White;
             this.EmployeeInsert.Location = new System.Drawing.Point(560, 177);
             this.EmployeeInsert.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.EmployeeInsert.Name = "EmployeeInsert";
             this.EmployeeInsert.Size = new System.Drawing.Size(60, 25);
             this.EmployeeInsert.TabIndex = 44;
             this.EmployeeInsert.Text = "등록";
-            this.EmployeeInsert.UseVisualStyleBackColor = true;
+            this.EmployeeInsert.UseVisualStyleBackColor = false;
             this.EmployeeInsert.Click += new System.EventHandler(this.EmployeeInsert_Click);
             // 
             // EmployeeCode
@@ -770,14 +785,14 @@
             // 
             // dataGridView1
             // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("굴림", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("굴림", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(159, 323);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -790,14 +805,14 @@
             // 
             // dataGridViewDepartment
             // 
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("굴림", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewDepartment.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("굴림", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewDepartment.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewDepartment.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewDepartment.Location = new System.Drawing.Point(159, 323);
             this.dataGridViewDepartment.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

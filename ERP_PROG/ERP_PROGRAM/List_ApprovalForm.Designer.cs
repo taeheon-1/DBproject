@@ -91,7 +91,8 @@
             // button_NewApprovalForm_approve
             // 
             this.button_NewApprovalForm_approve.BackColor = System.Drawing.Color.Black;
-            this.button_NewApprovalForm_approve.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button_NewApprovalForm_approve.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button_NewApprovalForm_approve.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button_NewApprovalForm_approve.ForeColor = System.Drawing.Color.White;
             this.button_NewApprovalForm_approve.Location = new System.Drawing.Point(1009, 122);
             this.button_NewApprovalForm_approve.Name = "button_NewApprovalForm_approve";
@@ -104,7 +105,8 @@
             // button_NewApprovalForm_return
             // 
             this.button_NewApprovalForm_return.BackColor = System.Drawing.Color.Black;
-            this.button_NewApprovalForm_return.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button_NewApprovalForm_return.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button_NewApprovalForm_return.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button_NewApprovalForm_return.ForeColor = System.Drawing.Color.White;
             this.button_NewApprovalForm_return.Location = new System.Drawing.Point(1009, 188);
             this.button_NewApprovalForm_return.Name = "button_NewApprovalForm_return";

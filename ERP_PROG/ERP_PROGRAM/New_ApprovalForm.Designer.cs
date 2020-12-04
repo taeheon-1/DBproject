@@ -148,7 +148,8 @@
             // button_register
             // 
             this.button_register.BackColor = System.Drawing.Color.Black;
-            this.button_register.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button_register.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button_register.Font = new System.Drawing.Font("굴림", 12F);
             this.button_register.ForeColor = System.Drawing.Color.White;
             this.button_register.Location = new System.Drawing.Point(128, 551);
             this.button_register.Name = "button_register";

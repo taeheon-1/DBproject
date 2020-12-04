@@ -63,35 +63,44 @@ namespace ERP_PROG
             // 
             // buttonModify
             // 
+            this.buttonModify.BackColor = System.Drawing.Color.Black;
+            this.buttonModify.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonModify.ForeColor = System.Drawing.Color.White;
             this.buttonModify.Location = new System.Drawing.Point(493, 14);
             this.buttonModify.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonModify.Name = "buttonModify";
             this.buttonModify.Size = new System.Drawing.Size(62, 22);
             this.buttonModify.TabIndex = 2;
             this.buttonModify.Text = "수정";
-            this.buttonModify.UseVisualStyleBackColor = true;
+            this.buttonModify.UseVisualStyleBackColor = false;
             this.buttonModify.Click += new System.EventHandler(this.buttonModify_Click);
             // 
             // buttonInpit
             // 
+            this.buttonInpit.BackColor = System.Drawing.Color.Black;
+            this.buttonInpit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonInpit.ForeColor = System.Drawing.Color.White;
             this.buttonInpit.Location = new System.Drawing.Point(287, 14);
             this.buttonInpit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonInpit.Name = "buttonInpit";
             this.buttonInpit.Size = new System.Drawing.Size(62, 22);
             this.buttonInpit.TabIndex = 1;
             this.buttonInpit.Text = "입력";
-            this.buttonInpit.UseVisualStyleBackColor = true;
+            this.buttonInpit.UseVisualStyleBackColor = false;
             this.buttonInpit.Click += new System.EventHandler(this.buttonInpit_Click);
             // 
             // buttonSelection
             // 
+            this.buttonSelection.BackColor = System.Drawing.Color.Black;
+            this.buttonSelection.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonSelection.ForeColor = System.Drawing.Color.White;
             this.buttonSelection.Location = new System.Drawing.Point(67, 14);
             this.buttonSelection.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonSelection.Name = "buttonSelection";
             this.buttonSelection.Size = new System.Drawing.Size(62, 22);
             this.buttonSelection.TabIndex = 0;
             this.buttonSelection.Text = "조회";
-            this.buttonSelection.UseVisualStyleBackColor = true;
+            this.buttonSelection.UseVisualStyleBackColor = false;
             this.buttonSelection.Click += new System.EventHandler(this.buttonSelection_Click);
             // 
             // dataGridView1
