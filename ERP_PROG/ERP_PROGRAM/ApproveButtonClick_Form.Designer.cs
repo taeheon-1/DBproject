@@ -70,6 +70,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(451, 184);
             this.Controls.Add(this.textBox_number_task);
             this.Controls.Add(this.button1);

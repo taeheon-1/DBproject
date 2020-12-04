@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -41,35 +39,14 @@
             this.dataGridView_approval_completion = new System.Windows.Forms.DataGridView();
             this.dataGridView_approval_progress = new System.Windows.Forms.DataGridView();
             this.textBox_approval_id = new System.Windows.Forms.TextBox();
-            this.panel1.SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_approving)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_approval_list)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_approval_completion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_approval_progress)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Blue;
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1184, 70);
-            this.panel1.TabIndex = 2;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Blue;
-            this.label2.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(21, 25);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 16);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "ERP Program";
             // 
             // label1
             // 
@@ -187,11 +164,35 @@
             this.textBox_approval_id.TabIndex = 34;
             this.textBox_approval_id.TextChanged += new System.EventHandler(this.textBox_approval_id_TextChanged);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Navy;
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1184, 42);
+            this.panel1.TabIndex = 35;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Navy;
+            this.label2.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(18, 15);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(115, 16);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "ERP Program";
+            // 
             // List_ApprovalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1184, 661);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBox_approval_id);
             this.Controls.Add(this.dataGridView_approval_progress);
             this.Controls.Add(this.dataGridView_approval_completion);
@@ -203,26 +204,23 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.panel1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "List_ApprovalForm";
             this.Text = "ERP Program";
             this.Load += new System.EventHandler(this.List_ApprovalForm_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_approving)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_approval_list)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_approval_completion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_approval_progress)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -234,5 +232,7 @@
         public System.Windows.Forms.DataGridView dataGridView_approval_completion;
         public System.Windows.Forms.DataGridView dataGridView_approval_progress;
         public System.Windows.Forms.TextBox textBox_approval_id;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label2;
     }
 }

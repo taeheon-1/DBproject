@@ -42,7 +42,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1153, 70);
+            this.panel1.Size = new System.Drawing.Size(1184, 70);
             this.panel1.TabIndex = 16;
             // 
             // label2
@@ -62,7 +62,7 @@
             this.button_approval_list.BackColor = System.Drawing.Color.Black;
             this.button_approval_list.Font = new System.Drawing.Font("굴림", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button_approval_list.ForeColor = System.Drawing.Color.White;
-            this.button_approval_list.Location = new System.Drawing.Point(698, 188);
+            this.button_approval_list.Location = new System.Drawing.Point(644, 204);
             this.button_approval_list.Name = "button_approval_list";
             this.button_approval_list.Size = new System.Drawing.Size(325, 315);
             this.button_approval_list.TabIndex = 29;
@@ -75,7 +75,7 @@
             this.button_new_approval.BackColor = System.Drawing.Color.Black;
             this.button_new_approval.Font = new System.Drawing.Font("굴림", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button_new_approval.ForeColor = System.Drawing.Color.White;
-            this.button_new_approval.Location = new System.Drawing.Point(256, 188);
+            this.button_new_approval.Location = new System.Drawing.Point(202, 204);
             this.button_new_approval.Name = "button_new_approval";
             this.button_new_approval.Size = new System.Drawing.Size(325, 315);
             this.button_new_approval.TabIndex = 28;
@@ -87,7 +87,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1153, 537);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1184, 661);
             this.Controls.Add(this.button_approval_list);
             this.Controls.Add(this.button_new_approval);
             this.Controls.Add(this.panel1);

@@ -30,19 +30,19 @@ namespace ERP_PROG
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.buttonModify = new System.Windows.Forms.Button();
+            this.buttonInpit = new System.Windows.Forms.Button();
             this.buttonSelection = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.buttonInpit = new System.Windows.Forms.Button();
-            this.buttonModify = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.ExtendedWork = new System.Windows.Forms.TextBox();
-            this.NightWork = new System.Windows.Forms.TextBox();
-            this.HolidayWork = new System.Windows.Forms.TextBox();
             this.WorkID = new System.Windows.Forms.TextBox();
+            this.HolidayWork = new System.Windows.Forms.TextBox();
+            this.ExtendedWork = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.NightWork = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -53,17 +53,42 @@ namespace ERP_PROG
             this.groupBox1.Controls.Add(this.buttonModify);
             this.groupBox1.Controls.Add(this.buttonInpit);
             this.groupBox1.Controls.Add(this.buttonSelection);
-            this.groupBox1.Location = new System.Drawing.Point(33, 12);
+            this.groupBox1.Location = new System.Drawing.Point(29, 10);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(724, 53);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(634, 42);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
+            // buttonModify
+            // 
+            this.buttonModify.Location = new System.Drawing.Point(493, 14);
+            this.buttonModify.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonModify.Name = "buttonModify";
+            this.buttonModify.Size = new System.Drawing.Size(62, 22);
+            this.buttonModify.TabIndex = 2;
+            this.buttonModify.Text = "수정";
+            this.buttonModify.UseVisualStyleBackColor = true;
+            this.buttonModify.Click += new System.EventHandler(this.buttonModify_Click);
+            // 
+            // buttonInpit
+            // 
+            this.buttonInpit.Location = new System.Drawing.Point(287, 14);
+            this.buttonInpit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonInpit.Name = "buttonInpit";
+            this.buttonInpit.Size = new System.Drawing.Size(62, 22);
+            this.buttonInpit.TabIndex = 1;
+            this.buttonInpit.Text = "입력";
+            this.buttonInpit.UseVisualStyleBackColor = true;
+            this.buttonInpit.Click += new System.EventHandler(this.buttonInpit_Click);
+            // 
             // buttonSelection
             // 
-            this.buttonSelection.Location = new System.Drawing.Point(77, 17);
+            this.buttonSelection.Location = new System.Drawing.Point(67, 14);
+            this.buttonSelection.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonSelection.Name = "buttonSelection";
-            this.buttonSelection.Size = new System.Drawing.Size(71, 27);
+            this.buttonSelection.Size = new System.Drawing.Size(62, 22);
             this.buttonSelection.TabIndex = 0;
             this.buttonSelection.Text = "조회";
             this.buttonSelection.UseVisualStyleBackColor = true;
@@ -72,32 +97,13 @@ namespace ERP_PROG
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(33, 206);
+            this.dataGridView1.Location = new System.Drawing.Point(29, 165);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 27;
-            this.dataGridView1.Size = new System.Drawing.Size(724, 232);
+            this.dataGridView1.Size = new System.Drawing.Size(634, 186);
             this.dataGridView1.TabIndex = 1;
-            // 
-            // buttonInpit
-            // 
-            this.buttonInpit.Location = new System.Drawing.Point(328, 17);
-            this.buttonInpit.Name = "buttonInpit";
-            this.buttonInpit.Size = new System.Drawing.Size(71, 27);
-            this.buttonInpit.TabIndex = 1;
-            this.buttonInpit.Text = "입력";
-            this.buttonInpit.UseVisualStyleBackColor = true;
-            this.buttonInpit.Click += new System.EventHandler(this.buttonInpit_Click);
-            // 
-            // buttonModify
-            // 
-            this.buttonModify.Location = new System.Drawing.Point(563, 17);
-            this.buttonModify.Name = "buttonModify";
-            this.buttonModify.Size = new System.Drawing.Size(71, 27);
-            this.buttonModify.TabIndex = 2;
-            this.buttonModify.Text = "수정";
-            this.buttonModify.UseVisualStyleBackColor = true;
-            this.buttonModify.Click += new System.EventHandler(this.buttonModify_Click);
             // 
             // groupBox2
             // 
@@ -109,89 +115,97 @@ namespace ERP_PROG
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.NightWork);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Location = new System.Drawing.Point(33, 82);
+            this.groupBox2.Location = new System.Drawing.Point(29, 66);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(724, 107);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Size = new System.Drawing.Size(634, 86);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "수당";
             // 
-            // label1
+            // WorkID
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "연장근로";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(233, 27);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 15);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "야간근로";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(470, 27);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 15);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "휴일근로";
-            // 
-            // ExtendedWork
-            // 
-            this.ExtendedWork.Location = new System.Drawing.Point(101, 24);
-            this.ExtendedWork.Multiline = true;
-            this.ExtendedWork.Name = "ExtendedWork";
-            this.ExtendedWork.Size = new System.Drawing.Size(100, 25);
-            this.ExtendedWork.TabIndex = 1;
-            // 
-            // NightWork
-            // 
-            this.NightWork.Location = new System.Drawing.Point(328, 24);
-            this.NightWork.Multiline = true;
-            this.NightWork.Name = "NightWork";
-            this.NightWork.Size = new System.Drawing.Size(100, 25);
-            this.NightWork.TabIndex = 1;
+            this.WorkID.Location = new System.Drawing.Point(493, 54);
+            this.WorkID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.WorkID.Multiline = true;
+            this.WorkID.Name = "WorkID";
+            this.WorkID.Size = new System.Drawing.Size(88, 21);
+            this.WorkID.TabIndex = 3;
             // 
             // HolidayWork
             // 
-            this.HolidayWork.Location = new System.Drawing.Point(563, 24);
+            this.HolidayWork.Location = new System.Drawing.Point(493, 19);
+            this.HolidayWork.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.HolidayWork.Multiline = true;
             this.HolidayWork.Name = "HolidayWork";
-            this.HolidayWork.Size = new System.Drawing.Size(100, 25);
+            this.HolidayWork.Size = new System.Drawing.Size(88, 21);
             this.HolidayWork.TabIndex = 1;
             // 
-            // WorkID
+            // ExtendedWork
             // 
-            this.WorkID.Location = new System.Drawing.Point(563, 67);
-            this.WorkID.Multiline = true;
-            this.WorkID.Name = "WorkID";
-            this.WorkID.Size = new System.Drawing.Size(100, 25);
-            this.WorkID.TabIndex = 3;
+            this.ExtendedWork.Location = new System.Drawing.Point(88, 19);
+            this.ExtendedWork.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ExtendedWork.Multiline = true;
+            this.ExtendedWork.Name = "ExtendedWork";
+            this.ExtendedWork.Size = new System.Drawing.Size(88, 21);
+            this.ExtendedWork.TabIndex = 1;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(491, 70);
+            this.label4.Location = new System.Drawing.Point(430, 56);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(18, 15);
+            this.label4.Size = new System.Drawing.Size(15, 12);
             this.label4.TabIndex = 0;
             this.label4.Text = "id";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(16, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(53, 12);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "연장근로";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(411, 22);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(53, 12);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "휴일근로";
+            // 
+            // NightWork
+            // 
+            this.NightWork.Location = new System.Drawing.Point(287, 19);
+            this.NightWork.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.NightWork.Multiline = true;
+            this.NightWork.Name = "NightWork";
+            this.NightWork.Size = new System.Drawing.Size(88, 21);
+            this.NightWork.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(204, 22);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 12);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "야간근로";
+            // 
             // Evaluation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(700, 360);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Evaluation";
             this.Text = "Evaluation";
             this.groupBox1.ResumeLayout(false);

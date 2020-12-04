@@ -50,7 +50,7 @@
             // 
             // textBox_title
             // 
-            this.textBox_title.Location = new System.Drawing.Point(186, 145);
+            this.textBox_title.Location = new System.Drawing.Point(123, 138);
             this.textBox_title.Multiline = true;
             this.textBox_title.Name = "textBox_title";
             this.textBox_title.Size = new System.Drawing.Size(174, 32);
@@ -60,7 +60,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("굴림", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(182, 93);
+            this.label1.Location = new System.Drawing.Point(119, 86);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(178, 24);
             this.label1.TabIndex = 17;
@@ -70,7 +70,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("굴림", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label3.Location = new System.Drawing.Point(135, 148);
+            this.label3.Location = new System.Drawing.Point(72, 141);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(37, 15);
             this.label3.TabIndex = 18;
@@ -80,7 +80,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("굴림", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label4.Location = new System.Drawing.Point(135, 257);
+            this.label4.Location = new System.Drawing.Point(72, 250);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(37, 15);
             this.label4.TabIndex = 19;
@@ -90,7 +90,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("굴림", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label5.Location = new System.Drawing.Point(135, 205);
+            this.label5.Location = new System.Drawing.Point(72, 198);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(37, 15);
             this.label5.TabIndex = 20;
@@ -98,7 +98,7 @@
             // 
             // textBox_text
             // 
-            this.textBox_text.Location = new System.Drawing.Point(186, 253);
+            this.textBox_text.Location = new System.Drawing.Point(123, 246);
             this.textBox_text.Multiline = true;
             this.textBox_text.Name = "textBox_text";
             this.textBox_text.Size = new System.Drawing.Size(174, 94);
@@ -107,7 +107,7 @@
             // comboBox_task
             // 
             this.comboBox_task.FormattingEnabled = true;
-            this.comboBox_task.Location = new System.Drawing.Point(186, 202);
+            this.comboBox_task.Location = new System.Drawing.Point(123, 195);
             this.comboBox_task.Name = "comboBox_task";
             this.comboBox_task.Size = new System.Drawing.Size(174, 20);
             this.comboBox_task.TabIndex = 22;
@@ -115,14 +115,14 @@
             // comboBox_approval_person
             // 
             this.comboBox_approval_person.FormattingEnabled = true;
-            this.comboBox_approval_person.Location = new System.Drawing.Point(186, 381);
+            this.comboBox_approval_person.Location = new System.Drawing.Point(123, 374);
             this.comboBox_approval_person.Name = "comboBox_approval_person";
             this.comboBox_approval_person.Size = new System.Drawing.Size(174, 20);
             this.comboBox_approval_person.TabIndex = 25;
             // 
             // textBox_comment
             // 
-            this.textBox_comment.Location = new System.Drawing.Point(186, 430);
+            this.textBox_comment.Location = new System.Drawing.Point(123, 423);
             this.textBox_comment.Multiline = true;
             this.textBox_comment.Name = "textBox_comment";
             this.textBox_comment.Size = new System.Drawing.Size(174, 98);
@@ -131,7 +131,7 @@
             // button_register
             // 
             this.button_register.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_register.Location = new System.Drawing.Point(186, 558);
+            this.button_register.Location = new System.Drawing.Point(123, 551);
             this.button_register.Name = "button_register";
             this.button_register.Size = new System.Drawing.Size(174, 61);
             this.button_register.TabIndex = 27;
@@ -145,7 +145,7 @@
             this.순번,
             this.제목,
             this.내용});
-            this.dataGridView1.Location = new System.Drawing.Point(459, 132);
+            this.dataGridView1.Location = new System.Drawing.Point(396, 125);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.Size = new System.Drawing.Size(345, 150);
@@ -173,7 +173,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1184, 42);
+            this.panel1.Size = new System.Drawing.Size(823, 42);
             this.panel1.TabIndex = 29;
             // 
             // label2
@@ -192,7 +192,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1184, 661);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(823, 661);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button_register);
@@ -206,6 +207,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox_title);
             this.Name = "ApprovalForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ERP Program";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ApprovalForm_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
