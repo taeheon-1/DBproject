@@ -89,7 +89,6 @@
             this.checkBoxRememberID.TabIndex = 5;
             this.checkBoxRememberID.Text = "ID 자동입력";
             this.checkBoxRememberID.UseVisualStyleBackColor = true;
-            this.checkBoxRememberID.CheckedChanged += new System.EventHandler(this.checkBoxRememberID_CheckedChanged);
             // 
             // checkBoxRememberPW
             // 
@@ -100,7 +99,6 @@
             this.checkBoxRememberPW.TabIndex = 6;
             this.checkBoxRememberPW.Text = "PW 자동입력";
             this.checkBoxRememberPW.UseVisualStyleBackColor = true;
-            this.checkBoxRememberPW.CheckedChanged += new System.EventHandler(this.checkBoxRememberPW_CheckedChanged);
             // 
             // LoginForm
             // 
@@ -116,7 +114,6 @@
             this.Controls.Add(this.textBoxID);
             this.Name = "LoginForm";
             this.Text = "Login";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LoginForm_FormClosing);
             this.Load += new System.EventHandler(this.LoginForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

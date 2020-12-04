@@ -34,6 +34,34 @@ namespace ERP_PROG
                 checkBoxRememberPW.Checked = true;
             }
         }
+
+        private void AutoLoadID()
+        {
+            if (checkBoxRememberID.Checked)
+            {
+                Properties.Settings.Default.LoginID = textBoxID.Text;
+            }
+            else
+            {
+                Properties.Settings.Default.LoginID = null;
+            }
+
+            Properties.Settings.Default.RememberIdCheckStatus = checkBoxRememberID.Checked;
+        }
+
+        private void AutoLoadPW()
+        {
+            if (checkBoxRememberPW.Checked)
+            {
+                Properties.Settings.Default.LoginPW = textBoxPW.Text;
+            }
+            else
+            {
+                Properties.Settings.Default.LoginPW = null;
+            }
+
+            Properties.Settings.Default.RememberPwCheckStatus = checkBoxRememberPW.Checked;
+        }
         
         private void buttonLogin_Click(object sender, EventArgs e)
         {
@@ -75,7 +103,11 @@ namespace ERP_PROG
                         Properties.Settings.Default.Save();
                         // 현재 접속자의 이름과 관리자 유무를 메인화면으로 전송
                         normalForm.SetLogin(id, loadName);
-                        
+
+                        AutoLoadID();
+                        AutoLoadPW();
+                        Properties.Settings.Default.Save();
+
                         // 메인 화면으로 전환
                         normalForm.Show();
                         this.Close();
@@ -91,39 +123,6 @@ namespace ERP_PROG
                     MessageBox.Show("올바른 로그인 정보를 입력하세요");
 
             }
-        }
-
-        private void checkBoxRememberID_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBoxRememberID.Checked)
-            {
-                Properties.Settings.Default.LoginID = textBoxID.Text;
-            }
-            else
-            {
-                Properties.Settings.Default.LoginID = null;
-            }
-
-            Properties.Settings.Default.RememberIdCheckStatus = checkBoxRememberID.Checked;
-        }
-
-        private void checkBoxRememberPW_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBoxRememberPW.Checked)
-            {
-                Properties.Settings.Default.LoginPW = textBoxPW.Text;
-            }
-            else
-            {
-                Properties.Settings.Default.LoginPW = null;
-            }
-
-            Properties.Settings.Default.RememberPwCheckStatus = checkBoxRememberPW.Checked;
-        }
-
-        private void LoginForm_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Properties.Settings.Default.Save();
         }
     }
 }
