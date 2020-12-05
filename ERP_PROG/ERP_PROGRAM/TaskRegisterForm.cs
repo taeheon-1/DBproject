@@ -168,7 +168,6 @@ namespace ERP_PROG
                     MessageBox.Show("시간이 겹치는 업무가 존재합니다.", "알림");
                 }
                 conn.Close();
-
             }
             Initdata();
         }
