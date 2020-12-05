@@ -87,22 +87,20 @@ namespace ERP_PROG
 
             if (radioButtonSearchOptionWrittenDate.Checked == true)
             {
-                query = $"SELECT * FROM number7.task WHERE task_worker = '{LoginUserName}' AND task_writtendate = '{search_keyword}'";
+                query = $"SELECT * FROM number7.task WHERE task_worker = '{LoginUserName}' AND task_writtendate LIKE '%{search_keyword}%'";
             }
 
             if (radioButtonSearchOptionTask.Checked == true)
             {
-                query = $"SELECT * FROM number7.task WHERE task_worker = '{LoginUserName}' AND task_smallcat = '{search_keyword}'";
+                query = $"SELECT * FROM number7.task WHERE task_worker = '{LoginUserName}' AND task_smallcat LIKE '%{search_keyword}%'";
             }
 
             if (radioButtonSearchOptionWrittenBy.Checked == true)
             {
-                query = $"SELECT * FROM number7.task WHERE task_worker = '{LoginUserName}' AND task_writtenby = '{search_keyword}'";
+                query = $"SELECT * FROM number7.task WHERE task_worker = '{LoginUserName}' AND task_writtenby LIKE '%{search_keyword}%'";
             }
 
             LoadTasks(listViewWorkDisplay, query);
-
-
         }
 
         private void buttonGoTaskMod_Click(object sender, EventArgs e)

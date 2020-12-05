@@ -84,23 +84,7 @@ namespace ERP_PROG
 
         private void buttonModTask_Click(object sender, EventArgs e)
         {
-            int count = 0;
-
-            if (comboBoxTaskBigCat.SelectedItem == null || comboBoxTaskMidCat.SelectedItem == null || comboBoxTaskSmallCat == null)
-            {
-                MessageBox.Show("부서, 업무 유형, 업무를 모두 선택하세요.", "확인");
-                return;
-            }
-            if (textBoxWorker.Text == "" || textBoxWrittenBy.Text == "")
-            {
-                MessageBox.Show("업무 수행자와 등록자 이름을 입력하세요.", "확인");
-                return;
-            }
-            if (textBoxTaskDetail.Text == "")
-            {
-                MessageBox.Show("업무 상세 내용을 입력하세요.", "확인");
-                return;
-            }
+            int count = 0;            
 
             DateTime nowdt = DateTime.Now;
 
@@ -125,7 +109,7 @@ namespace ERP_PROG
 
                 while (rdr.Read())
                 {
-                    count = Convert.ToInt32(rdr["count(task_id)"] + "");
+                    count = Convert.ToInt32(rdr["count(*)"] + "");
                 }
                 rdr.Close();
 

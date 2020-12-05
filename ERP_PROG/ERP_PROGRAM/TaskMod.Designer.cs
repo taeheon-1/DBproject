@@ -126,6 +126,7 @@
             this.comboBoxTaskSmallCat.Name = "comboBoxTaskSmallCat";
             this.comboBoxTaskSmallCat.Size = new System.Drawing.Size(101, 20);
             this.comboBoxTaskSmallCat.TabIndex = 44;
+            this.comboBoxTaskSmallCat.SelectedIndexChanged += new System.EventHandler(this.comboBoxTaskSmallCat_SelectedIndexChanged);
             // 
             // comboBoxTaskMidCat
             // 
@@ -134,6 +135,7 @@
             this.comboBoxTaskMidCat.Name = "comboBoxTaskMidCat";
             this.comboBoxTaskMidCat.Size = new System.Drawing.Size(101, 20);
             this.comboBoxTaskMidCat.TabIndex = 43;
+            this.comboBoxTaskMidCat.SelectedIndexChanged += new System.EventHandler(this.comboBoxTaskMidCat_SelectedIndexChanged);
             // 
             // comboBoxTaskBigCat
             // 
@@ -142,6 +144,7 @@
             this.comboBoxTaskBigCat.Name = "comboBoxTaskBigCat";
             this.comboBoxTaskBigCat.Size = new System.Drawing.Size(101, 20);
             this.comboBoxTaskBigCat.TabIndex = 42;
+            this.comboBoxTaskBigCat.SelectedIndexChanged += new System.EventHandler(this.comboBoxTaskBigCat_SelectedIndexChanged);
             // 
             // dateTimePickerTaskEnd
             // 
