@@ -30,7 +30,7 @@ namespace ERP_PROG
         private void timer_Tick(object sender, EventArgs e)
         {
             DateTime dt = DateTime.Now;
-            string datePart = dt.ToString("hh시 : mm분 결재되었습니다.");
+            string datePart = dt.ToString("hh시 mm분 결재되었습니다.");
             textBox_Date.Text = datePart;
         }
 

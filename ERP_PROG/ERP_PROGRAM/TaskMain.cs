@@ -19,6 +19,7 @@ namespace ERP_PROG
         }
 
         string LoginUserName = NormalForm.LoginUserName;
+        string LoginUserRank = NormalForm.LoginUserRank;
 
         string strConn = "server=49.50.174.201;Database=number7;Uid=number7;Pwd=number7;Charset=utf8;";
 
@@ -105,39 +106,72 @@ namespace ERP_PROG
 
         private void buttonGoTaskMod_Click(object sender, EventArgs e)
         {
-            TaskMod TaskMod = new TaskMod();
             int SelectRow = listViewWorkDisplay.SelectedItems[0].Index;
-            TaskMod.storeId = listViewWorkDisplay.Items[SelectRow].SubItems[0].Text;
-            TaskMod.ShowDialog();
+            string SelectRowsName = listViewWorkDisplay.Items[SelectRow].SubItems[8].Text;
+            if (LoginUserRank != "일반 사원" && LoginUserName == SelectRowsName)
+            {
+                TaskMod TaskMod = new TaskMod();
+                TaskMod.storeId = listViewWorkDisplay.Items[SelectRow].SubItems[0].Text;
+                TaskMod.ShowDialog();
+                
+            }
+            else
+                MessageBox.Show("일반 사원 및 등록자 외에는 접근할 수 없습니다.");
         }
 
         private void buttonTaskDelete_Click(object sender, EventArgs e)
         {
-            int SelectRow = listViewWorkDisplay.SelectedItems[0].Index;
-            string deleteTaskId = listViewWorkDisplay.Items[SelectRow].SubItems[0].Text;
-
-            using (MySqlConnection conn = new MySqlConnection(strConn))
+            if (LoginUserRank != "일반사원")
             {
-                conn.Open();
+                int SelectRow = listViewWorkDisplay.SelectedItems[0].Index;
+                string deleteTaskId = listViewWorkDisplay.Items[SelectRow].SubItems[0].Text;
 
-                string query = $"DELETE FROM task WHERE task_id = '{deleteTaskId}'";
-                MySqlCommand cmd = new MySqlCommand(query, conn);
-                cmd.ExecuteNonQuery();
+                using (MySqlConnection conn = new MySqlConnection(strConn))
+                {
+                    conn.Open();
+
+                    string query = $"DELETE FROM task WHERE task_id = '{deleteTaskId}'";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.ExecuteNonQuery();
+                }
+                string load_query = $"SELECT * FROM number7.task WHERE task_worker = '{LoginUserName}'";
+
+                LoadTasks(listViewWorkDisplay, load_query);
             }
-            string load_query = $"SELECT * FROM number7.task WHERE task_worker = '{LoginUserName}'";
-
-            LoadTasks(listViewWorkDisplay, load_query);
+            else
+                MessageBox.Show("일반 사원은 실행할 수 없습니다.");
         }
 
         private void buttonGoTaskAdd_Click(object sender, EventArgs e)
         {
-            TaskRegister TaskRegister = new TaskRegister();
-            TaskRegister.ShowDialog();
+            if (LoginUserRank != "일반사원")
+            {
+                TaskRegister TaskRegister = new TaskRegister();
+                TaskRegister.ShowDialog();
+            }
+            else
+                MessageBox.Show("일반 사원은 접근할 수 없습니다.");
         }
 
         private void TaskMain_FormClosed(object sender, FormClosedEventArgs e)
         {
             (new NormalForm()).Visible = true;
+        }
+
+        private void buttonMyTask_Click(object sender, EventArgs e)
+        {
+            string query = $"SELECT * FROM number7.task WHERE task_worker = '{LoginUserName}'";
+
+            LoadTasks(listViewWorkDisplay, query);
+
+        }
+
+        private void buttonMyWrittenTask_Click(object sender, EventArgs e)
+        {
+            string query = $"SELECT * FROM number7.task WHERE task_writtenby = '{LoginUserName}'";
+
+            LoadTasks(listViewWorkDisplay, query);
+
         }
     }
 }

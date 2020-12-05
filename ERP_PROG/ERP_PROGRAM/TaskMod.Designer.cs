@@ -55,9 +55,9 @@
             this.buttonModTask.BackColor = System.Drawing.Color.Black;
             this.buttonModTask.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonModTask.ForeColor = System.Drawing.Color.White;
-            this.buttonModTask.Location = new System.Drawing.Point(911, 588);
+            this.buttonModTask.Location = new System.Drawing.Point(833, 550);
             this.buttonModTask.Name = "buttonModTask";
-            this.buttonModTask.Size = new System.Drawing.Size(198, 30);
+            this.buttonModTask.Size = new System.Drawing.Size(148, 41);
             this.buttonModTask.TabIndex = 28;
             this.buttonModTask.Text = "해당 일일 업무 수정";
             this.buttonModTask.UseVisualStyleBackColor = false;

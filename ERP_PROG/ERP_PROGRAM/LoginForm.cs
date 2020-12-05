@@ -75,13 +75,14 @@ namespace ERP_PROG
             string loadId = "";
             string loadPw = "";
             string loadName = "";
+            string loadRank = "";
 
             using (MySqlConnection conn = new MySqlConnection(strConn))
             {
                 conn.Open();
 
                 // DB에서 id와 동일한 회원의 정보를 받음.
-                string query = $"SELECT * FROM number7.사원TEST WHERE employee_code = '{id}'";
+                string query = $"SELECT * FROM number7.사원 WHERE employee_code = '{id}'";
 
                 MySqlCommand cmd = new MySqlCommand(query, conn);
                 MySqlDataReader rdr = cmd.ExecuteReader();
@@ -91,6 +92,7 @@ namespace ERP_PROG
                     loadId = rdr["employee_code"] + "";
                     loadPw = rdr["employee_password"] + "";
                     loadName = rdr["employee_name"] + "";
+                    loadRank = rdr["employee_rank"] + "";
                 }
                 rdr.Close();
 
@@ -102,7 +104,7 @@ namespace ERP_PROG
                     {
                         Properties.Settings.Default.Save();
                         // 현재 접속자의 이름과 관리자 유무를 메인화면으로 전송
-                        normalForm.SetLogin(id, loadName);
+                        normalForm.SetLogin(id, loadName, loadRank);
 
                         AutoLoadID();
                         AutoLoadPW();

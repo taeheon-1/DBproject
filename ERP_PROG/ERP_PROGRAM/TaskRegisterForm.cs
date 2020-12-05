@@ -17,6 +17,7 @@ namespace ERP_PROG
         string select_bigcat = "";
         string select_midcat = "";
         string select_smallcat = "";
+        string task_writtenby = NormalForm.LoginUserName;
 
         public TaskRegister()
         {
@@ -31,7 +32,6 @@ namespace ERP_PROG
         private void Initdata()
         {
             textBoxWorker.Clear();
-            textBoxWrittenBy.Clear();
             textBoxTaskDetail.Clear();
 
             comboBoxTaskBigCat.Items.Clear();
@@ -116,9 +116,9 @@ namespace ERP_PROG
                 MessageBox.Show("부서, 업무 유형, 업무를 모두 선택하세요.", "확인");
                 return;
             }
-            if (textBoxWorker.Text == "" || textBoxWrittenBy.Text == "")
+            if (textBoxWorker.Text == "")
             {
-                MessageBox.Show("업무 수행자와 등록자 이름을 입력하세요.", "확인");
+                MessageBox.Show("업무 수행자 이름을 입력하세요.", "확인");
                 return;
             }
             if (textBoxTaskDetail.Text == "")
@@ -136,7 +136,6 @@ namespace ERP_PROG
             string startdt = dateTimePickerTaskStart.Value.ToString("yyyy-MM-dd HH:mm");
             string finishdt = dateTimePickerTaskEnd.Value.ToString("yyyy-MM-dd HH:mm");
             string worker = textBoxWorker.Text;
-            string writtenby = textBoxWrittenBy.Text;
             string detail = textBoxTaskDetail.Text;
 
             using (MySqlConnection conn = new MySqlConnection(strconn))
@@ -157,7 +156,7 @@ namespace ERP_PROG
                 if (count == 0)
                 {
                     query = "insert into task(task_bigcat, task_midcat, task_smallcat, task_detail, task_taskstart, task_taskend, task_writtendate, task_writtenby, task_worker)" +
-                        $"values ('{taskBigcat}','{taskMidcat}','{taskSmallcat}','{detail}','{startdt}','{finishdt}','{writtendt}','{writtenby}','{worker}') ";
+                        $"values ('{taskBigcat}','{taskMidcat}','{taskSmallcat}','{detail}','{startdt}','{finishdt}','{writtendt}','{task_writtenby}','{worker}') ";
 
                     cmd = new MySqlCommand(query, conn);
                     cmd.ExecuteNonQuery();
