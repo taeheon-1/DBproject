@@ -109,24 +109,6 @@ namespace ERP_PROG
         // 일일 등록 버튼 클릭
         private void btn_Taskregister_Click(object sender, EventArgs e)
         {
-            int count = 0;
-
-            if (comboBoxTaskBigCat.SelectedItem == null || comboBoxTaskMidCat.SelectedItem == null || comboBoxTaskSmallCat == null)
-            {
-                MessageBox.Show("부서, 업무 유형, 업무를 모두 선택하세요.", "확인");
-                return;
-            }
-            if (textBoxWorker.Text == "")
-            {
-                MessageBox.Show("업무 수행자 이름을 입력하세요.", "확인");
-                return;
-            }
-            if (textBoxTaskDetail.Text == "")
-            {
-                MessageBox.Show("업무 상세 내용을 입력하세요.", "확인");
-                return;
-            }
-
             DateTime nowdt = DateTime.Now;
 
             string writtendt = nowdt.ToString("yyyy-MM-dd");
@@ -137,6 +119,44 @@ namespace ERP_PROG
             string finishdt = dateTimePickerTaskEnd.Value.ToString("yyyy-MM-dd HH:mm");
             string worker = textBoxWorker.Text;
             string detail = textBoxTaskDetail.Text;
+
+            int DuplicateDateCount = 0;
+
+            using (MySqlConnection conn = new MySqlConnection(strconn))
+            {
+                int NameCheckCount = 0;
+                conn.Open();
+
+                string query = $"select count(*) from number7.사원 where employee_name='{worker}'";
+
+                MySqlCommand cmd = new MySqlCommand(query, conn);
+                MySqlDataReader rdr = cmd.ExecuteReader();
+
+                while (rdr.Read())
+                {
+                    NameCheckCount = Convert.ToInt32(rdr["count(*)"]);
+                }
+
+                if (comboBoxTaskBigCat.SelectedItem == null || comboBoxTaskMidCat.SelectedItem == null || comboBoxTaskSmallCat == null)
+                {
+                    MessageBox.Show("부서, 업무 유형, 업무를 모두 선택하세요.", "확인");
+                    return;
+                }
+                if (textBoxWorker.Text == "" || NameCheckCount == 0)
+                {
+                    MessageBox.Show("업무 수행자 이름을 알맞게 입력하세요.", "확인");
+                    return;
+                }
+                if (textBoxTaskDetail.Text == "")
+                {
+                    MessageBox.Show("업무 상세 내용을 입력하세요.", "확인");
+                    return;
+                }
+
+                conn.Close();
+            }            
+
+            
 
             using (MySqlConnection conn = new MySqlConnection(strconn))
             {
@@ -149,11 +169,11 @@ namespace ERP_PROG
 
                 while (rdr.Read())
                 {
-                    count = Convert.ToInt32(rdr["count(task_id)"] + "");
+                    DuplicateDateCount = Convert.ToInt32(rdr["count(*)"]);
                 }
                 rdr.Close();
 
-                if (count == 0)
+                if (DuplicateDateCount == 0)
                 {
                     query = "insert into task(task_bigcat, task_midcat, task_smallcat, task_detail, task_taskstart, task_taskend, task_writtendate, task_writtenby, task_worker)" +
                         $"values ('{taskBigcat}','{taskMidcat}','{taskSmallcat}','{detail}','{startdt}','{finishdt}','{writtendt}','{task_writtenby}','{worker}') ";
@@ -168,7 +188,6 @@ namespace ERP_PROG
                     MessageBox.Show("시간이 겹치는 업무가 존재합니다.", "알림");
                 }
                 conn.Close();
-
             }
             Initdata();
         }

@@ -222,3 +222,4 @@ C:\Users\User\Documents\GitHub\DBproject\ERP_PROG\ERP_PROGRAM\obj\Debug\ERP_PROG
 C:\Users\User\Documents\GitHub\DBproject\ERP_PROG\ERP_PROGRAM\obj\Debug\ERP_PROG.exe
 C:\Users\User\Documents\GitHub\DBproject\ERP_PROG\ERP_PROGRAM\obj\Debug\ERP_PROG.pdb
 C:\Users\User\Documents\GitHub\DBproject\ERP_PROG\ERP_PROGRAM\obj\Debug\ERP_PROG.PersonnelForm.resources
+C:\Users\k5441\Documents\GitHub\DBproject\ERP_PROG\ERP_PROGRAM\obj\Debug\ERP_PROG.PostNumber.resources
