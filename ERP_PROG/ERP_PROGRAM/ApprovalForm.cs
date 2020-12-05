@@ -23,21 +23,18 @@ namespace ERP_PROG
             normal.Show();
         }
 
-        private void button_personnel_Click(object sender, EventArgs e)
+        private void button_register_Click(object sender, EventArgs e)
         {
+            /*string query = "INSERT INTO 결재(approval_title, approval_task, approval_contents, approval_person, approver1, approver2, approver3, approval_coment,approval_coment,approva_progress,approval_type) " +
+                    "values ('" + this.EmployeeCode.Text + "','" + this.EmployeePassword.Text + "', '" + this.EmployeeAge.Text + "','"
+                    + this.EmployeeName.Text + "','" + this.EmployeeAddress.Text + "','" + this.EmployeeRank.Text + "'" +
+                    ",'" + this.EmployeeDetailedAddress.Text + "','" + this.EmployeeDepartment.Text + "')";
+            ERPManager.GetInstance().Insert(query);*/
         }
 
-        private void button_business_Click(object sender, EventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-        }
 
-        private void button_approval_Click(object sender, EventArgs e)
-        {
         }
-
-        private void button_message_Click(object sender, EventArgs e)
-        {
-        }
-
     }
 }

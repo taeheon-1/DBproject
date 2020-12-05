@@ -34,7 +34,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox_text = new System.Windows.Forms.TextBox();
-            this.comboBox_task = new System.Windows.Forms.ComboBox();
             this.comboBox_approval_person = new System.Windows.Forms.ComboBox();
             this.textBox_comment = new System.Windows.Forms.TextBox();
             this.button_register = new System.Windows.Forms.Button();
@@ -44,6 +43,7 @@
             this.내용 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -104,14 +104,6 @@
             this.textBox_text.Size = new System.Drawing.Size(174, 94);
             this.textBox_text.TabIndex = 21;
             // 
-            // comboBox_task
-            // 
-            this.comboBox_task.FormattingEnabled = true;
-            this.comboBox_task.Location = new System.Drawing.Point(123, 195);
-            this.comboBox_task.Name = "comboBox_task";
-            this.comboBox_task.Size = new System.Drawing.Size(174, 20);
-            this.comboBox_task.TabIndex = 22;
-            // 
             // comboBox_approval_person
             // 
             this.comboBox_approval_person.FormattingEnabled = true;
@@ -140,6 +132,7 @@
             this.button_register.TabIndex = 27;
             this.button_register.Text = "등록하기";
             this.button_register.UseVisualStyleBackColor = false;
+            this.button_register.Click += new System.EventHandler(this.button_register_Click);
             // 
             // dataGridView1
             // 
@@ -153,6 +146,7 @@
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.Size = new System.Drawing.Size(345, 150);
             this.dataGridView1.TabIndex = 28;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // 순번
             // 
@@ -191,18 +185,25 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "ERP Program";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(123, 196);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(174, 21);
+            this.textBox1.TabIndex = 30;
+            // 
             // ApprovalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(823, 661);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button_register);
             this.Controls.Add(this.textBox_comment);
             this.Controls.Add(this.comboBox_approval_person);
-            this.Controls.Add(this.comboBox_task);
             this.Controls.Add(this.textBox_text);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -228,7 +229,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox_text;
-        private System.Windows.Forms.ComboBox comboBox_task;
         private System.Windows.Forms.ComboBox comboBox_approval_person;
         private System.Windows.Forms.TextBox textBox_comment;
         private System.Windows.Forms.Button button_register;
@@ -238,5 +238,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn 내용;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

@@ -10,9 +10,13 @@ using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
 namespace ERP_PROG
-{
+{ 
+
     public partial class List_ApprovalForm : Form
     {
+
+        string LoginUserName = NormalForm.LoginUserName;
+        string LoginUserRank = NormalForm.LoginUserRank;
         public string Now_Approval_Person { get; set; }
         public string First_Approval_Person { get; set; }
         public string Second_Approval_Person { get; set; }
@@ -25,15 +29,14 @@ namespace ERP_PROG
 
         private void button_NewApprovalForm_approve_Click(object sender, EventArgs e)
         {
-            string approval_id = textBox_approval_id.Text;
-            string query1 = "update 결재 set 진행사항 = '결재완료', 결재타입 = 4 where 결재id = '" + approval_id + "' and 결재자 = '기안자' and 결재자1 = '기안자'";
+            /*string query1 = "update 결재 set 진행사항 = '결재완료', 결재타입 = 4 where 결재id = '" + approval_id + "' and 결재자 = '기안자' and 결재자1 = '기안자'";
 
             
             string query2 = "update 결재 set 결재자 = '부서장', 결재타입 = 2 where 결재id = '" + approval_id + "' and 결재자 = '기안자' and 결재자1 = '기안자' and 결재자2 = '부서장'";
 
             DBManager.GetInstance().Update(query1);
             DBManager.GetInstance().Update(query2);
-            MessageBox.Show(approval_id + "번 결재 되었습니다.", "확인");
+            MessageBox.Show(LoginUserNam + "번 결재 되었습니다.", "확인");*/
 
             ApproveButtonClick_Form form = new ApproveButtonClick_Form();
             form.ShowDialog();

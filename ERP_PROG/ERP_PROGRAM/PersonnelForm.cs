@@ -16,7 +16,8 @@ namespace ERP_PROG
     public partial class PersonnelForm : Form
     {
         private Person Per;
-            public PersonnelForm()
+        string LoginUserName = NormalForm.LoginUserName;
+        public PersonnelForm()
             {
                 InitializeComponent();
                 lnitCombo();
@@ -74,12 +75,9 @@ namespace ERP_PROG
                 }
             }
 
-
-
-            string LoginUserID = "";
             public void SetLogin(string id)
             {
-                this.LoginUserID = id;
+                this.LoginUserName = id;
             }
 
             private void buttonadd_Click(object sender, EventArgs e) //출근부 등록
@@ -312,12 +310,12 @@ namespace ERP_PROG
 
                     EmployeeID.Text = row.Cells[0].Value.ToString();
                     EmployeeCode.Text = row.Cells[1].Value.ToString();
-                    EmployeeAge.Text = row.Cells[2].Value.ToString();
-                    EmployeeName.Text = row.Cells[3].Value.ToString();
-                    EmployeeAddress.Text = row.Cells[4].Value.ToString();
-                    EmployeeRank.SelectedItem = row.Cells[5].Value.ToString();
+                    EmployeeAge.Text = row.Cells[3].Value.ToString();
+                    EmployeeName.Text = row.Cells[4].Value.ToString();
+                    EmployeeAddress.Text = row.Cells[5].Value.ToString();
+                    EmployeeRank.Text = row.Cells[7].Value.ToString();
                     EmployeeDetailedAddress.Text = row.Cells[6].Value.ToString();
-                    EmployeeDepartment.SelectedItem = row.Cells[7].Value.ToString();
+                    EmployeeDepartment.Text = row.Cells[8].Value.ToString();
                 }
             }
 
