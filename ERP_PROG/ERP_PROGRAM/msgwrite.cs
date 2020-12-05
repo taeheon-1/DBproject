@@ -13,7 +13,7 @@ namespace ERP_PROG
 {
     public partial class msgWrite : Form
     {
-        string LoginUser = "류다은";
+        string LoginUser = NormalForm.LoginUserName;
         string strconn = "server=49.50.174.201;Database=number7;Uid=number7;Pwd=number7;Charset=utf8;";
 
         public msgWrite()
@@ -58,7 +58,7 @@ namespace ERP_PROG
                     conn.Open();
 
                     string query = $"insert into number7.msg(msg_sender, msg_recipient, msg_title, msg_contents, msg_checkreceive) " +
-                        $"values('{msgreceiver}','{LoginUser}','{title}','{contents}','{0}')";
+                        $"values('{LoginUser}','{msgreceiver}','{title}','{contents}','{0}')";
                     MySqlCommand cmd = new MySqlCommand(query, conn);
                     cmd.ExecuteNonQuery();
                 }

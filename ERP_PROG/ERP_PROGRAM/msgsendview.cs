@@ -108,7 +108,7 @@ namespace ERP_PROG
 
         private void btn_Reload_Click(object sender, EventArgs e)
         {
-            string query = $"select msg_id,msg_sender,msg_title,msg_contents,msg_checkreceive from number7.msg where msg_recipient='{LoginUserName}'";
+            string query = $"select msg_id,msg_recipient,msg_title,msg_contents,msg_checkreceive from number7.msg where msg_sender='{LoginUserName}'";
             Load_msg(query);
         }
 
