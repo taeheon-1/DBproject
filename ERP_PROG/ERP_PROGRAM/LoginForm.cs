@@ -75,6 +75,7 @@ namespace ERP_PROG
             string loadId = "";
             string loadPw = "";
             string loadName = "";
+            string loadRank = "";
 
             using (MySqlConnection conn = new MySqlConnection(strConn))
             {
@@ -91,6 +92,7 @@ namespace ERP_PROG
                     loadId = rdr["employee_code"] + "";
                     loadPw = rdr["employee_password"] + "";
                     loadName = rdr["employee_name"] + "";
+                    loadRank = rdr["employee_rank"] + "";
                 }
                 rdr.Close();
 
@@ -102,7 +104,7 @@ namespace ERP_PROG
                     {
                         Properties.Settings.Default.Save();
                         // 현재 접속자의 이름과 관리자 유무를 메인화면으로 전송
-                        normalForm.SetLogin(id, loadName);
+                        normalForm.SetLogin(id, loadName, loadRank);
 
                         AutoLoadID();
                         AutoLoadPW();

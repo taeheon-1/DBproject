@@ -111,21 +111,5 @@ namespace ERP_PROG
         {
 
         }
-
-        private void button_personnel_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void button_business_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void button_approval_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void button_message_Click(object sender, EventArgs e)
-        {
-        }
     }
 }

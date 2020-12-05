@@ -17,6 +17,7 @@ namespace ERP_PROG
         string select_bigcat = "";
         string select_midcat = "";
         string select_smallcat = "";
+        string task_writtenby = NormalForm.LoginUserName;
 
         public TaskRegister()
         {
@@ -31,7 +32,6 @@ namespace ERP_PROG
         private void Initdata()
         {
             textBoxWorker.Clear();
-            textBoxWrittenBy.Clear();
             textBoxTaskDetail.Clear();
 
             comboBoxTaskBigCat.Items.Clear();
@@ -105,17 +105,6 @@ namespace ERP_PROG
             select_smallcat = comboBoxTaskSmallCat.SelectedItem.ToString();
 
         }
-        private void duplication_check(ComboBox combobox)
-        {
-            List<string> list = new List<string>();
-
-            foreach (string s in combobox.Items)
-            {
-                if (!list.Contains(s)) list.Add(s);
-            }
-            combobox.Items.Clear();
-            combobox.Items.AddRange(list.ToArray());
-        }
 
         // 일일 등록 버튼 클릭
         private void btn_Taskregister_Click(object sender, EventArgs e)
@@ -127,9 +116,9 @@ namespace ERP_PROG
                 MessageBox.Show("부서, 업무 유형, 업무를 모두 선택하세요.", "확인");
                 return;
             }
-            if (textBoxWorker.Text == "" || textBoxWrittenBy.Text == "")
+            if (textBoxWorker.Text == "")
             {
-                MessageBox.Show("업무 수행자와 등록자 이름을 입력하세요.", "확인");
+                MessageBox.Show("업무 수행자 이름을 입력하세요.", "확인");
                 return;
             }
             if (textBoxTaskDetail.Text == "")
@@ -137,8 +126,6 @@ namespace ERP_PROG
                 MessageBox.Show("업무 상세 내용을 입력하세요.", "확인");
                 return;
             }
-            //시간 중복 오류 msg
-            //if()
 
             DateTime nowdt = DateTime.Now;
 
@@ -149,14 +136,13 @@ namespace ERP_PROG
             string startdt = dateTimePickerTaskStart.Value.ToString("yyyy-MM-dd HH:mm");
             string finishdt = dateTimePickerTaskEnd.Value.ToString("yyyy-MM-dd HH:mm");
             string worker = textBoxWorker.Text;
-            string writtenby = textBoxWrittenBy.Text;
             string detail = textBoxTaskDetail.Text;
 
             using (MySqlConnection conn = new MySqlConnection(strconn))
             {
                 conn.Open();
 
-                string query = $"SELECT count(task_id) FROM task WHERE task_taskstart >= '{startdt}' AND task_taskend <= '{finishdt}'";
+                string query = $"select count(*) from number7.task where task_worker='{worker}' and task_taskstart < '{finishdt}' and task_taskend > '{startdt}'";
 
                 MySqlCommand cmd = new MySqlCommand(query, conn);
                 MySqlDataReader rdr = cmd.ExecuteReader();
@@ -167,37 +153,24 @@ namespace ERP_PROG
                 }
                 rdr.Close();
 
-                if (count != 0)
-                    MessageBox.Show("이미 해당 시간에 업무가 존재합니다.");
-
-                else
+                if (count == 0)
                 {
                     query = "insert into task(task_bigcat, task_midcat, task_smallcat, task_detail, task_taskstart, task_taskend, task_writtendate, task_writtenby, task_worker)" +
-                        $"values ('{taskBigcat}','{taskMidcat}','{taskSmallcat}','{detail}','{startdt}','{finishdt}','{writtendt}','{writtenby}','{worker}')";
+                        $"values ('{taskBigcat}','{taskMidcat}','{taskSmallcat}','{detail}','{startdt}','{finishdt}','{writtendt}','{task_writtenby}','{worker}') ";
 
                     cmd = new MySqlCommand(query, conn);
                     cmd.ExecuteNonQuery();
+
+                    MessageBox.Show("업무 등록 완료", "알림");
+                }
+                else
+                {
+                    MessageBox.Show("시간이 겹치는 업무가 존재합니다.", "알림");
                 }
                 conn.Close();
 
             }
             Initdata();
-        }
-
-        private void button_business_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void button_approval_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void button_message_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void button_personnel_Click(object sender, EventArgs e)
-        {
         }
 
         private void TaskRegister_FormClosed(object sender, FormClosedEventArgs e)

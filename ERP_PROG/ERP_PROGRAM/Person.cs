@@ -39,13 +39,19 @@ namespace ERP_PROG
             switch (how_.SelectedIndex)
             {
                 case 0:     //부서명
-                    query = "SELECT * FROM 사원TEST WHERE employee_department = '" + this.what_.Text + "'"; 
+                    query = "SELECT employee_id AS ID,employee_code AS 사원코드, employee_password AS 비밀번호, employee_age AS 나이, employee_name AS 사원명," +
+                        "employee_address AS 주소,employee_detailed_address AS 상세주소, employee_rank AS 직급, employee_department AS 부서 " +
+                        "FROM 사원TEST WHERE employee_department = '" + this.what_.Text + "'"; 
                     break;
                 case 1:     //사원명
-                    query = "SELECT * FROM 사원TEST WHERE employee_name = '" + this.what_.Text + "'";
+                    query = "SELECT employee_id AS ID,employee_code AS 사원코드, employee_password AS 비밀번호, employee_age AS 나이, employee_name AS 사원명," +
+                        "employee_address AS 주소,employee_detailed_address AS 상세주소, employee_rank AS 직급, employee_department AS 부서 " +
+                        "FROM 사원TEST WHERE employee_name = '" + this.what_.Text + "'";
                     break;
                 case 2:     //나이
-                    query = "SELECT * FROM 사원TEST WHERE employee_age = '" + this.what_.Text + "'"; 
+                    query = "SELECT employee_id AS ID, employee_code AS 사원코드, employee_password AS 비밀번호, employee_age AS 나이, employee_name AS 사원명," +
+                        "employee_address AS 주소,employee_detailed_address AS 상세주소, employee_rank AS 직급, employee_department AS 부서 " +
+                        "FROM 사원TEST WHERE employee_age = '" + this.what_.Text + "'"; 
                     break;
 
             }

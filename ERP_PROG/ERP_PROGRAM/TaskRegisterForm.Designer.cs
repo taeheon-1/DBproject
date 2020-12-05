@@ -42,9 +42,7 @@
             this.comboBoxTaskMidCat = new System.Windows.Forms.ComboBox();
             this.comboBoxTaskSmallCat = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.textBoxWorker = new System.Windows.Forms.TextBox();
-            this.textBoxWrittenBy = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -190,29 +188,12 @@
             this.label1.TabIndex = 29;
             this.label1.Text = "업무 수행자";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label9.Location = new System.Drawing.Point(346, 245);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(82, 13);
-            this.label9.TabIndex = 30;
-            this.label9.Text = "업무 등록자";
-            // 
             // textBoxWorker
             // 
             this.textBoxWorker.Location = new System.Drawing.Point(201, 285);
             this.textBoxWorker.Name = "textBoxWorker";
             this.textBoxWorker.Size = new System.Drawing.Size(100, 21);
             this.textBoxWorker.TabIndex = 31;
-            // 
-            // textBoxWrittenBy
-            // 
-            this.textBoxWrittenBy.Location = new System.Drawing.Point(349, 285);
-            this.textBoxWrittenBy.Name = "textBoxWrittenBy";
-            this.textBoxWrittenBy.Size = new System.Drawing.Size(100, 21);
-            this.textBoxWrittenBy.TabIndex = 32;
             // 
             // panel1
             // 
@@ -243,9 +224,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1184, 661);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.textBoxWrittenBy);
             this.Controls.Add(this.textBoxWorker);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBoxTaskSmallCat);
             this.Controls.Add(this.comboBoxTaskMidCat);
@@ -286,9 +265,7 @@
         private System.Windows.Forms.ComboBox comboBoxTaskSmallCat;
         protected System.Windows.Forms.DateTimePicker dateTimePickerTaskEnd;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBoxWorker;
-        private System.Windows.Forms.TextBox textBoxWrittenBy;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
     }

@@ -18,13 +18,15 @@ namespace ERP_PROG
             InitializeComponent();
 
         }
-        string LoginUserID = "";
+        public static string LoginUserID = "";
         public static string LoginUserName = "";
+        public static string LoginUserRank = "";
 
-        public void SetLogin(string id, string name)
+        public void SetLogin(string id, string name, string rank)
         {
-            this.LoginUserID = id;
+            LoginUserID = id;
             LoginUserName = name;
+            LoginUserRank = rank;
         }
 
         private void NormalForm_Load(object sender, EventArgs e)

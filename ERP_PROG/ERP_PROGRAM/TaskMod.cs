@@ -50,52 +50,14 @@ namespace ERP_PROG
             }
         }
 
-        /*private void duplication_check(ComboBox combobox)
-        {
-            List<string> list = new List<string>();
-            foreach (string s in combobox.Items)
-            {
-                if (!list.Contains(s)) list.Add(s);
-            }
-            combobox.Items.Clear();
-            combobox.Items.AddRange(list.ToArray());
-        }*/
-
         public string storeId
         {
             get { return this.modTaskId; }
             set { this.modTaskId = value; }
         }
-        
+
         private void WorkMod_Load(object sender, EventArgs e)
         {
-            
-            /*using (MySqlConnection conn = new MySqlConnection(strConn))
-            {
-                conn.Open();
-                string query = "select tmaster_bigcat, tmaster_midcat, tmaster_smallcat from tmaster";
-                MySqlCommand cmd = new MySqlCommand(query, conn);
-                MySqlDataReader rd = cmd.ExecuteReader();
-                while (rd.Read())
-                {
-                    string Taskbigcat = string.Format("{0}", rd["tmaster_bigcat"]);
-                    string Taskmidcat = string.Format("{0}", rd["tmaster_midcat"]);
-                    string Tasksmallcat = string.Format("{0}", rd["tmaster_smallcat"]);
-
-                    comboBoxTaskBigCat.Items.Add(Taskbigcat);
-                    comboBoxTaskMidCat.Items.Add(Taskmidcat);
-                    comboBoxTaskSmallCat.Items.Add(Tasksmallcat);
-                }
-                rd.Close();
-
-                // combobox 중복 데이터 삭제
-                duplication_check(comboBoxTaskBigCat);
-                duplication_check(comboBoxTaskMidCat);
-                duplication_check(comboBoxTaskSmallCat);
-
-            }*/
-            
-
             using (MySqlConnection conn = new MySqlConnection(strConn))
             {
                 conn.Open();
@@ -117,13 +79,12 @@ namespace ERP_PROG
                     dateTimePickerTaskEnd.Value = Convert.ToDateTime(rdr["task_taskend"] + "");
                 }
             }
-
-            LoadBigCat();                    
+            LoadBigCat();
         }
 
         private void buttonModTask_Click(object sender, EventArgs e)
         {
-            int count = 0;
+            int count = 0;            
 
             DateTime nowdt = DateTime.Now;
 
@@ -137,42 +98,39 @@ namespace ERP_PROG
             string writtenby = textBoxWrittenBy.Text;
             string detail = textBoxTaskDetail.Text;
 
-            /*string[] modData = { comboBoxTaskBigCat.Text, comboBoxTaskMidCat.Text, comboBoxTaskSmallCat.Text, textBoxTaskDetail.Text,
-                textBoxWorker.Text, textBoxWrittenBy.Text, dateTimePickerTaskStart.Value.ToString("yyyy-MM-dd HH:mm"),
-                dateTimePickerTaskEnd.Value.ToString("yyyy-MM-dd HH:mm") };*/
-
             using (MySqlConnection conn = new MySqlConnection(strConn))
             {
                 conn.Open();
 
-                string query = $"SELECT count(task_id) FROM task WHERE task_worker = '{worker}' AND (task_taskstart >= '{startdt}' AND task_taskend < '{finishdt}')";
+                string query = $"select count(*) from number7.task where task_worker='{worker}' and task_taskstart < '{finishdt}' and task_taskend > '{startdt}'";
 
                 MySqlCommand cmd = new MySqlCommand(query, conn);
                 MySqlDataReader rdr = cmd.ExecuteReader();
 
                 while (rdr.Read())
                 {
-                    count = Convert.ToInt32(rdr["count(task_id)"] + "");
-                    MessageBox.Show(Convert.ToString(count));
+                    count = Convert.ToInt32(rdr["count(*)"] + "");
                 }
                 rdr.Close();
 
-                if (count != 0)
-                    MessageBox.Show("이미 해당 시간에 업무가 존재합니다.");
-
-                else 
+                if (count == 0)
                 {
-                    query = $"UPDATE task SET task_bigcat = '{taskBigcat}', task_midcat = '{taskMidcat}', task_smallcat = '{taskSmallcat}', " +
-                        $"task_detail = '{detail}', task_worker = '{worker}', task_writtenby = '{writtenby}', task_taskstart = '{startdt}', " +
-                        $"task_taskend = '{finishdt}' WHERE task_id = '{modTaskId}'";
+                    query = "insert into task(task_bigcat, task_midcat, task_smallcat, task_detail, task_taskstart, task_taskend, task_writtendate, task_writtenby, task_worker)" +
+                        $"values ('{taskBigcat}','{taskMidcat}','{taskSmallcat}','{detail}','{startdt}','{finishdt}','{writtendt}','{writtenby}','{worker}') ";
 
                     cmd = new MySqlCommand(query, conn);
                     cmd.ExecuteNonQuery();
 
-                    this.Close();
-                }               
+                    MessageBox.Show("업무 등록 완료", "알림");
+                }
+                else
+                {
+                    MessageBox.Show("시간이 겹치는 업무가 존재합니다.", "알림");
+                }
                 conn.Close();
-            }            
+
+            }
+
         }
 
         private void comboBoxTaskBigCat_SelectedIndexChanged(object sender, EventArgs e)

@@ -52,6 +52,8 @@
             this.buttonGoMasterEdit = new System.Windows.Forms.Button();
             this.buttonReturn = new System.Windows.Forms.Button();
             this.buttonTaskDelete = new System.Windows.Forms.Button();
+            this.buttonMyWrittenTask = new System.Windows.Forms.Button();
+            this.buttonMyTask = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -183,10 +185,10 @@
             this.radioButtonSearchOptionTask.AutoSize = true;
             this.radioButtonSearchOptionTask.Location = new System.Drawing.Point(21, 131);
             this.radioButtonSearchOptionTask.Name = "radioButtonSearchOptionTask";
-            this.radioButtonSearchOptionTask.Size = new System.Drawing.Size(47, 16);
+            this.radioButtonSearchOptionTask.Size = new System.Drawing.Size(97, 16);
             this.radioButtonSearchOptionTask.TabIndex = 3;
             this.radioButtonSearchOptionTask.TabStop = true;
-            this.radioButtonSearchOptionTask.Text = "업무";
+            this.radioButtonSearchOptionTask.Text = "업무 (소분류)";
             this.radioButtonSearchOptionTask.UseVisualStyleBackColor = true;
             // 
             // radioButtonSearchOptionWrittenDate
@@ -194,10 +196,10 @@
             this.radioButtonSearchOptionWrittenDate.AutoSize = true;
             this.radioButtonSearchOptionWrittenDate.Location = new System.Drawing.Point(21, 84);
             this.radioButtonSearchOptionWrittenDate.Name = "radioButtonSearchOptionWrittenDate";
-            this.radioButtonSearchOptionWrittenDate.Size = new System.Drawing.Size(47, 16);
+            this.radioButtonSearchOptionWrittenDate.Size = new System.Drawing.Size(103, 16);
             this.radioButtonSearchOptionWrittenDate.TabIndex = 2;
             this.radioButtonSearchOptionWrittenDate.TabStop = true;
-            this.radioButtonSearchOptionWrittenDate.Text = "날짜";
+            this.radioButtonSearchOptionWrittenDate.Text = "업무 등록 날짜";
             this.radioButtonSearchOptionWrittenDate.UseVisualStyleBackColor = true;
             // 
             // textBoxTaskSearch
@@ -227,7 +229,7 @@
             this.buttonGoTaskMod.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonGoTaskMod.Font = new System.Drawing.Font("굴림", 9F);
             this.buttonGoTaskMod.ForeColor = System.Drawing.Color.White;
-            this.buttonGoTaskMod.Location = new System.Drawing.Point(725, 365);
+            this.buttonGoTaskMod.Location = new System.Drawing.Point(725, 600);
             this.buttonGoTaskMod.Name = "buttonGoTaskMod";
             this.buttonGoTaskMod.Size = new System.Drawing.Size(198, 30);
             this.buttonGoTaskMod.TabIndex = 9;
@@ -241,7 +243,7 @@
             this.buttonGoTaskAdd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonGoTaskAdd.Font = new System.Drawing.Font("굴림", 9F);
             this.buttonGoTaskAdd.ForeColor = System.Drawing.Color.White;
-            this.buttonGoTaskAdd.Location = new System.Drawing.Point(521, 365);
+            this.buttonGoTaskAdd.Location = new System.Drawing.Point(521, 600);
             this.buttonGoTaskAdd.Name = "buttonGoTaskAdd";
             this.buttonGoTaskAdd.Size = new System.Drawing.Size(198, 30);
             this.buttonGoTaskAdd.TabIndex = 10;
@@ -269,7 +271,7 @@
             this.buttonReturn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonReturn.Font = new System.Drawing.Font("굴림", 9F);
             this.buttonReturn.ForeColor = System.Drawing.Color.White;
-            this.buttonReturn.Location = new System.Drawing.Point(799, 67);
+            this.buttonReturn.Location = new System.Drawing.Point(812, 67);
             this.buttonReturn.Name = "buttonReturn";
             this.buttonReturn.Size = new System.Drawing.Size(101, 30);
             this.buttonReturn.TabIndex = 14;
@@ -283,7 +285,7 @@
             this.buttonTaskDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonTaskDelete.Font = new System.Drawing.Font("굴림", 9F);
             this.buttonTaskDelete.ForeColor = System.Drawing.Color.White;
-            this.buttonTaskDelete.Location = new System.Drawing.Point(929, 365);
+            this.buttonTaskDelete.Location = new System.Drawing.Point(929, 600);
             this.buttonTaskDelete.Name = "buttonTaskDelete";
             this.buttonTaskDelete.Size = new System.Drawing.Size(198, 30);
             this.buttonTaskDelete.TabIndex = 15;
@@ -291,12 +293,42 @@
             this.buttonTaskDelete.UseVisualStyleBackColor = false;
             this.buttonTaskDelete.Click += new System.EventHandler(this.buttonTaskDelete_Click);
             // 
+            // buttonMyWrittenTask
+            // 
+            this.buttonMyWrittenTask.BackColor = System.Drawing.Color.Black;
+            this.buttonMyWrittenTask.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonMyWrittenTask.Font = new System.Drawing.Font("굴림", 9F);
+            this.buttonMyWrittenTask.ForeColor = System.Drawing.Color.White;
+            this.buttonMyWrittenTask.Location = new System.Drawing.Point(929, 363);
+            this.buttonMyWrittenTask.Name = "buttonMyWrittenTask";
+            this.buttonMyWrittenTask.Size = new System.Drawing.Size(198, 30);
+            this.buttonMyWrittenTask.TabIndex = 16;
+            this.buttonMyWrittenTask.Text = "내가 등록한 업무";
+            this.buttonMyWrittenTask.UseVisualStyleBackColor = false;
+            this.buttonMyWrittenTask.Click += new System.EventHandler(this.buttonMyWrittenTask_Click);
+            // 
+            // buttonMyTask
+            // 
+            this.buttonMyTask.BackColor = System.Drawing.Color.Black;
+            this.buttonMyTask.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonMyTask.Font = new System.Drawing.Font("굴림", 9F);
+            this.buttonMyTask.ForeColor = System.Drawing.Color.White;
+            this.buttonMyTask.Location = new System.Drawing.Point(725, 363);
+            this.buttonMyTask.Name = "buttonMyTask";
+            this.buttonMyTask.Size = new System.Drawing.Size(198, 30);
+            this.buttonMyTask.TabIndex = 17;
+            this.buttonMyTask.Text = "내가 해야 할 업무";
+            this.buttonMyTask.UseVisualStyleBackColor = false;
+            this.buttonMyTask.Click += new System.EventHandler(this.buttonMyTask_Click);
+            // 
             // TaskMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1184, 661);
+            this.Controls.Add(this.buttonMyTask);
+            this.Controls.Add(this.buttonMyWrittenTask);
             this.Controls.Add(this.buttonTaskDelete);
             this.Controls.Add(this.buttonReturn);
             this.Controls.Add(this.buttonGoMasterEdit);
@@ -345,5 +377,7 @@
         private System.Windows.Forms.ColumnHeader task_taskend;
         private System.Windows.Forms.Button buttonTaskDelete;
         private System.Windows.Forms.ColumnHeader task_id;
+        private System.Windows.Forms.Button buttonMyWrittenTask;
+        private System.Windows.Forms.Button buttonMyTask;
     }
 }
