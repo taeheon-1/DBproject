@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBoxSearchsender = new System.Windows.Forms.TextBox();
             this.textBoxSearchtitlecontents = new System.Windows.Forms.TextBox();
             this.btn_Msgsearch = new System.Windows.Forms.Button();
             this.listViewMsg = new System.Windows.Forms.ListView();
@@ -44,37 +41,15 @@
             this.labelSendview = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.radiobutton_sender = new System.Windows.Forms.RadioButton();
+            this.radioButton_title = new System.Windows.Forms.RadioButton();
+            this.radioButton_contents = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(229, 165);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 12);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "보낸 사람";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(435, 165);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 12);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "제목+내용";
-            // 
-            // textBoxSearchsender
-            // 
-            this.textBoxSearchsender.Location = new System.Drawing.Point(307, 160);
-            this.textBoxSearchsender.Name = "textBoxSearchsender";
-            this.textBoxSearchsender.Size = new System.Drawing.Size(100, 21);
-            this.textBoxSearchsender.TabIndex = 9;
-            // 
             // textBoxSearchtitlecontents
             // 
-            this.textBoxSearchtitlecontents.Location = new System.Drawing.Point(513, 160);
+            this.textBoxSearchtitlecontents.Location = new System.Drawing.Point(540, 162);
             this.textBoxSearchtitlecontents.Name = "textBoxSearchtitlecontents";
             this.textBoxSearchtitlecontents.Size = new System.Drawing.Size(435, 21);
             this.textBoxSearchtitlecontents.TabIndex = 11;
@@ -201,12 +176,49 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "ERP Program";
             // 
+            // radiobutton_sender
+            // 
+            this.radiobutton_sender.AutoSize = true;
+            this.radiobutton_sender.Location = new System.Drawing.Point(239, 162);
+            this.radiobutton_sender.Name = "radiobutton_sender";
+            this.radiobutton_sender.Size = new System.Drawing.Size(71, 16);
+            this.radiobutton_sender.TabIndex = 19;
+            this.radiobutton_sender.TabStop = true;
+            this.radiobutton_sender.Text = "보낸사람";
+            this.radiobutton_sender.UseVisualStyleBackColor = true;
+            // 
+            // radioButton_title
+            // 
+            this.radioButton_title.AutoSize = true;
+            this.radioButton_title.Location = new System.Drawing.Point(344, 163);
+            this.radioButton_title.Name = "radioButton_title";
+            this.radioButton_title.Size = new System.Drawing.Size(47, 16);
+            this.radioButton_title.TabIndex = 20;
+            this.radioButton_title.TabStop = true;
+            this.radioButton_title.Text = "제목";
+            this.radioButton_title.UseVisualStyleBackColor = true;
+            // 
+            // radioButton_contents
+            // 
+            this.radioButton_contents.AutoSize = true;
+            this.radioButton_contents.Location = new System.Drawing.Point(424, 163);
+            this.radioButton_contents.Name = "radioButton_contents";
+            this.radioButton_contents.Size = new System.Drawing.Size(47, 16);
+            this.radioButton_contents.TabIndex = 21;
+            this.radioButton_contents.TabStop = true;
+            this.radioButton_contents.Text = "내용";
+            this.radioButton_contents.UseVisualStyleBackColor = true;
+            this.radioButton_contents.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
+            // 
             // msgview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1184, 661);
+            this.Controls.Add(this.radioButton_contents);
+            this.Controls.Add(this.radioButton_title);
+            this.Controls.Add(this.radiobutton_sender);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.labelSendview);
             this.Controls.Add(this.btn_Reload);
@@ -215,9 +227,6 @@
             this.Controls.Add(this.listViewMsg);
             this.Controls.Add(this.btn_Msgsearch);
             this.Controls.Add(this.textBoxSearchtitlecontents);
-            this.Controls.Add(this.textBoxSearchsender);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label3);
             this.Name = "msgview";
             this.Text = "msgview";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.msgview_FormClosed);
@@ -230,9 +239,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBoxSearchsender;
         private System.Windows.Forms.TextBox textBoxSearchtitlecontents;
         private System.Windows.Forms.Button btn_Msgsearch;
         private System.Windows.Forms.ListView listViewMsg;
@@ -246,5 +252,8 @@
         private System.Windows.Forms.Label labelSendview;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.RadioButton radiobutton_sender;
+        private System.Windows.Forms.RadioButton radioButton_title;
+        private System.Windows.Forms.RadioButton radioButton_contents;
     }
 }

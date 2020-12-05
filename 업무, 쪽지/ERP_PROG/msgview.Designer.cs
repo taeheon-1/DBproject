@@ -205,7 +205,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(229, 165);
+            this.label3.Location = new System.Drawing.Point(210, 154);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(57, 12);
             this.label3.TabIndex = 5;
@@ -214,7 +214,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(442, 165);
+            this.label4.Location = new System.Drawing.Point(423, 154);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(29, 12);
             this.label4.TabIndex = 6;
@@ -223,7 +223,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(229, 204);
+            this.label5.Location = new System.Drawing.Point(210, 193);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(29, 12);
             this.label5.TabIndex = 7;
@@ -231,21 +231,21 @@
             // 
             // textBoxSearchsender
             // 
-            this.textBoxSearchsender.Location = new System.Drawing.Point(292, 160);
+            this.textBoxSearchsender.Location = new System.Drawing.Point(273, 149);
             this.textBoxSearchsender.Name = "textBoxSearchsender";
             this.textBoxSearchsender.Size = new System.Drawing.Size(100, 21);
             this.textBoxSearchsender.TabIndex = 9;
             // 
             // textBoxSearchtitle
             // 
-            this.textBoxSearchtitle.Location = new System.Drawing.Point(491, 160);
+            this.textBoxSearchtitle.Location = new System.Drawing.Point(472, 149);
             this.textBoxSearchtitle.Name = "textBoxSearchtitle";
             this.textBoxSearchtitle.Size = new System.Drawing.Size(251, 21);
             this.textBoxSearchtitle.TabIndex = 10;
             // 
             // textBoxSearchcontents
             // 
-            this.textBoxSearchcontents.Location = new System.Drawing.Point(292, 201);
+            this.textBoxSearchcontents.Location = new System.Drawing.Point(273, 190);
             this.textBoxSearchcontents.Name = "textBoxSearchcontents";
             this.textBoxSearchcontents.Size = new System.Drawing.Size(450, 21);
             this.textBoxSearchcontents.TabIndex = 11;
@@ -255,7 +255,7 @@
             this.btn_Msgsearch.BackColor = System.Drawing.Color.Black;
             this.btn_Msgsearch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_Msgsearch.ForeColor = System.Drawing.Color.White;
-            this.btn_Msgsearch.Location = new System.Drawing.Point(766, 160);
+            this.btn_Msgsearch.Location = new System.Drawing.Point(747, 149);
             this.btn_Msgsearch.Name = "btn_Msgsearch";
             this.btn_Msgsearch.Size = new System.Drawing.Size(69, 62);
             this.btn_Msgsearch.TabIndex = 12;
@@ -275,7 +275,7 @@
             this.columnHeader5});
             this.listViewMsg.GridLines = true;
             this.listViewMsg.HideSelection = false;
-            this.listViewMsg.Location = new System.Drawing.Point(228, 248);
+            this.listViewMsg.Location = new System.Drawing.Point(209, 237);
             this.listViewMsg.Name = "listViewMsg";
             this.listViewMsg.Size = new System.Drawing.Size(835, 366);
             this.listViewMsg.TabIndex = 13;
@@ -311,7 +311,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(225, 112);
+            this.label1.Location = new System.Drawing.Point(206, 101);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 13);
             this.label1.TabIndex = 14;
@@ -322,7 +322,7 @@
             this.btn_Msgwrite.BackColor = System.Drawing.Color.Black;
             this.btn_Msgwrite.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_Msgwrite.ForeColor = System.Drawing.Color.White;
-            this.btn_Msgwrite.Location = new System.Drawing.Point(966, 190);
+            this.btn_Msgwrite.Location = new System.Drawing.Point(947, 179);
             this.btn_Msgwrite.Name = "btn_Msgwrite";
             this.btn_Msgwrite.Size = new System.Drawing.Size(97, 32);
             this.btn_Msgwrite.TabIndex = 15;

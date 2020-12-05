@@ -66,7 +66,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(21, 25);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(131, 20);
+            this.label2.Size = new System.Drawing.Size(115, 16);
             this.label2.TabIndex = 2;
             this.label2.Text = "ERP Program";
             // 
@@ -97,6 +97,7 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 5;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox3
             // 
@@ -119,6 +120,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox1
             // 
@@ -130,7 +132,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
-   
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // button_message
             // 
@@ -145,6 +147,7 @@
             this.button_message.Text = "쪽지";
             this.button_message.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button_message.UseVisualStyleBackColor = false;
+            this.button_message.Click += new System.EventHandler(this.button_message_Click);
             // 
             // button_business
             // 
@@ -188,7 +191,6 @@
             this.button_personnel.Text = "인사";
             this.button_personnel.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button_personnel.UseVisualStyleBackColor = false;
-            this.button_personnel.Click += new System.EventHandler(this.button_personnel_Click);
             // 
             // NormalForm
             // 

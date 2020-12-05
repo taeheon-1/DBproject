@@ -19,17 +19,35 @@ namespace ERP_PROG
 
         private void button_approval_Click(object sender, EventArgs e)
         {
-            this.Hide();
             ApprovalForm approvalform = new ApprovalForm();
             approvalform.Show();
         }
 
 
-        private void button_personnel_Click(object sender, EventArgs e)
+
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            PersonnelForm approvalform = new PersonnelForm();
-            approvalform.Show();
+            PersonnelForm newForm = new PersonnelForm();
+            newForm.Show();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            TaskMain newForm = new TaskMain();
+            newForm.Show();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            msg newForm = new msg();
+            newForm.Show();
+        }
+            
+        private void button_message_Click(object sender, EventArgs e)
+        {
+            msg newForm = new msg();
+            newForm.Show();
         }
     }
 }
