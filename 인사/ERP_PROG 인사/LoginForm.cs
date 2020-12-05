@@ -24,8 +24,9 @@ namespace ERP_PROG
             {
                 this.Hide();
 
-                NormalForm normalform = new NormalForm();
-                normalform.ShowDialog();
+                NormalForm newForm = new NormalForm();
+                newForm.Show();
+
             }
             else
                 MessageBox.Show("정확한 ID와 PW를 입력해주세요.");

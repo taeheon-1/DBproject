@@ -39,12 +39,12 @@
             this.msgCheckreceive = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btn_Msgsearch = new System.Windows.Forms.Button();
             this.textBoxSearchtitlecontents = new System.Windows.Forms.TextBox();
-            this.textBoxSearchreceiver = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.labelReceiveview = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.radioButton_contents = new System.Windows.Forms.RadioButton();
+            this.radioButton_title = new System.Windows.Forms.RadioButton();
+            this.radiobutton_recipient = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -141,6 +141,7 @@
             this.btn_Msgsearch.TabIndex = 21;
             this.btn_Msgsearch.Text = "검색";
             this.btn_Msgsearch.UseVisualStyleBackColor = false;
+            this.btn_Msgsearch.Click += new System.EventHandler(this.btn_Msgsearch_Click);
             // 
             // textBoxSearchtitlecontents
             // 
@@ -149,34 +150,10 @@
             this.textBoxSearchtitlecontents.Size = new System.Drawing.Size(435, 21);
             this.textBoxSearchtitlecontents.TabIndex = 20;
             // 
-            // textBoxSearchreceiver
-            // 
-            this.textBoxSearchreceiver.Location = new System.Drawing.Point(307, 160);
-            this.textBoxSearchreceiver.Name = "textBoxSearchreceiver";
-            this.textBoxSearchreceiver.Size = new System.Drawing.Size(100, 21);
-            this.textBoxSearchreceiver.TabIndex = 19;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(435, 165);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 12);
-            this.label5.TabIndex = 18;
-            this.label5.Text = "제목+내용";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(229, 165);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 12);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "받는 사람";
-            // 
             // labelReceiveview
             // 
             this.labelReceiveview.AutoSize = true;
+            this.labelReceiveview.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelReceiveview.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.labelReceiveview.Location = new System.Drawing.Point(225, 112);
             this.labelReceiveview.Name = "labelReceiveview";
@@ -208,23 +185,56 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "ERP Program";
             // 
+            // radioButton_contents
+            // 
+            this.radioButton_contents.AutoSize = true;
+            this.radioButton_contents.Location = new System.Drawing.Point(426, 163);
+            this.radioButton_contents.Name = "radioButton_contents";
+            this.radioButton_contents.Size = new System.Drawing.Size(47, 16);
+            this.radioButton_contents.TabIndex = 24;
+            this.radioButton_contents.TabStop = true;
+            this.radioButton_contents.Text = "내용";
+            this.radioButton_contents.UseVisualStyleBackColor = true;
+            // 
+            // radioButton_title
+            // 
+            this.radioButton_title.AutoSize = true;
+            this.radioButton_title.Location = new System.Drawing.Point(345, 163);
+            this.radioButton_title.Name = "radioButton_title";
+            this.radioButton_title.Size = new System.Drawing.Size(47, 16);
+            this.radioButton_title.TabIndex = 23;
+            this.radioButton_title.TabStop = true;
+            this.radioButton_title.Text = "제목";
+            this.radioButton_title.UseVisualStyleBackColor = true;
+            // 
+            // radiobutton_recipient
+            // 
+            this.radiobutton_recipient.AutoSize = true;
+            this.radiobutton_recipient.Location = new System.Drawing.Point(239, 163);
+            this.radiobutton_recipient.Name = "radiobutton_recipient";
+            this.radiobutton_recipient.Size = new System.Drawing.Size(75, 16);
+            this.radiobutton_recipient.TabIndex = 22;
+            this.radiobutton_recipient.TabStop = true;
+            this.radiobutton_recipient.Text = "받는 사람";
+            this.radiobutton_recipient.UseVisualStyleBackColor = true;
+            // 
             // msgsendview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1184, 661);
+            this.Controls.Add(this.radioButton_contents);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.radioButton_title);
             this.Controls.Add(this.labelReceiveview);
+            this.Controls.Add(this.radiobutton_recipient);
             this.Controls.Add(this.btn_Reload);
             this.Controls.Add(this.btn_Msgwrite);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listViewMsg);
             this.Controls.Add(this.btn_Msgsearch);
             this.Controls.Add(this.textBoxSearchtitlecontents);
-            this.Controls.Add(this.textBoxSearchreceiver);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label3);
             this.Name = "msgsendview";
             this.Text = "msgsendview";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.msgsendview_FormClosed);
@@ -248,11 +258,11 @@
         private System.Windows.Forms.ColumnHeader msgCheckreceive;
         private System.Windows.Forms.Button btn_Msgsearch;
         private System.Windows.Forms.TextBox textBoxSearchtitlecontents;
-        private System.Windows.Forms.TextBox textBoxSearchreceiver;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label labelReceiveview;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.RadioButton radioButton_contents;
+        private System.Windows.Forms.RadioButton radioButton_title;
+        private System.Windows.Forms.RadioButton radiobutton_recipient;
     }
 }

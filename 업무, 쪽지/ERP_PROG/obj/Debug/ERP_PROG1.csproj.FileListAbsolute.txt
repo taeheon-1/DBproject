@@ -38,3 +38,16 @@ C:\Users\82103\Desktop\DB\DBproject-main\ERP_PROG\ERP_PROG\obj\Debug\ERP_PROG1.c
 C:\Users\82103\Desktop\DB\DBproject-main\ERP_PROG\ERP_PROG\obj\Debug\ERP_PROG1.csproj.CopyComplete
 C:\Users\82103\Desktop\DB\DBproject-main\ERP_PROG\ERP_PROG\obj\Debug\ERP_PROG.exe
 C:\Users\82103\Desktop\DB\DBproject-main\ERP_PROG\ERP_PROG\obj\Debug\ERP_PROG.pdb
+C:\Users\User\Documents\GitHub\DBproject\업무, 쪽지\ERP_PROG\obj\Debug\ERP_PROG1.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\DBproject\업무, 쪽지\ERP_PROG\obj\Debug\ERP_PROG.ApprovalForm.resources
+C:\Users\User\Documents\GitHub\DBproject\업무, 쪽지\ERP_PROG\obj\Debug\ERP_PROG.msg.resources
+C:\Users\User\Documents\GitHub\DBproject\업무, 쪽지\ERP_PROG\obj\Debug\ERP_PROG.msgview.resources
+C:\Users\User\Documents\GitHub\DBproject\업무, 쪽지\ERP_PROG\obj\Debug\ERP_PROG.TaskregisteForm.resources
+C:\Users\User\Documents\GitHub\DBproject\업무, 쪽지\ERP_PROG\obj\Debug\ERP_PROG.NormalForm.resources
+C:\Users\User\Documents\GitHub\DBproject\업무, 쪽지\ERP_PROG\obj\Debug\ERP_PROG.LoginForm.resources
+C:\Users\User\Documents\GitHub\DBproject\업무, 쪽지\ERP_PROG\obj\Debug\ERP_PROG.Properties.Resources.resources
+C:\Users\User\Documents\GitHub\DBproject\업무, 쪽지\ERP_PROG\obj\Debug\ERP_PROG.WorkMasterEdit.resources
+C:\Users\User\Documents\GitHub\DBproject\업무, 쪽지\ERP_PROG\obj\Debug\ERP_PROG1.csproj.GenerateResource.cache
+C:\Users\User\Documents\GitHub\DBproject\업무, 쪽지\ERP_PROG\obj\Debug\ERP_PROG1.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\DBproject\업무, 쪽지\ERP_PROG\obj\Debug\ERP_PROG.exe
+C:\Users\User\Documents\GitHub\DBproject\업무, 쪽지\ERP_PROG\obj\Debug\ERP_PROG.pdb

@@ -32,9 +32,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.기본정보 = new System.Windows.Forms.TabPage();
+            this.PostNumberSearch = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.EmployeePassword = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.PostNumberText = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.EmployeeID = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -125,9 +126,10 @@
             // 
             // 기본정보
             // 
+            this.기본정보.Controls.Add(this.PostNumberSearch);
             this.기본정보.Controls.Add(this.label1);
             this.기본정보.Controls.Add(this.EmployeePassword);
-            this.기본정보.Controls.Add(this.textBox1);
+            this.기본정보.Controls.Add(this.PostNumberText);
             this.기본정보.Controls.Add(this.label21);
             this.기본정보.Controls.Add(this.EmployeeID);
             this.기본정보.Controls.Add(this.groupBox1);
@@ -156,6 +158,20 @@
             this.기본정보.Text = "기본정보";
             this.기본정보.UseVisualStyleBackColor = true;
             // 
+            // PostNumberSearch
+            // 
+            this.PostNumberSearch.BackColor = System.Drawing.Color.Black;
+            this.PostNumberSearch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.PostNumberSearch.ForeColor = System.Drawing.Color.White;
+            this.PostNumberSearch.Location = new System.Drawing.Point(555, 114);
+            this.PostNumberSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PostNumberSearch.Name = "PostNumberSearch";
+            this.PostNumberSearch.Size = new System.Drawing.Size(63, 22);
+            this.PostNumberSearch.TabIndex = 94;
+            this.PostNumberSearch.Text = "주소검색";
+            this.PostNumberSearch.UseVisualStyleBackColor = false;
+            this.PostNumberSearch.Click += new System.EventHandler(this.PostNumberSearch_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -173,13 +189,13 @@
             this.EmployeePassword.Size = new System.Drawing.Size(181, 21);
             this.EmployeePassword.TabIndex = 103;
             // 
-            // textBox1
+            // PostNumberText
             // 
-            this.textBox1.Location = new System.Drawing.Point(368, 114);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(57, 21);
-            this.textBox1.TabIndex = 102;
+            this.PostNumberText.Location = new System.Drawing.Point(368, 114);
+            this.PostNumberText.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PostNumberText.Name = "PostNumberText";
+            this.PostNumberText.Size = new System.Drawing.Size(57, 21);
+            this.PostNumberText.TabIndex = 102;
             // 
             // label21
             // 
@@ -325,6 +341,7 @@
             this.EmployeeRank.FormattingEnabled = true;
             this.EmployeeRank.Items.AddRange(new object[] {
             "일반 사원",
+            "과장",
             "부서장",
             "사장"});
             this.EmployeeRank.Location = new System.Drawing.Point(130, 148);
@@ -338,7 +355,7 @@
             this.EmployeeInsert.BackColor = System.Drawing.Color.Black;
             this.EmployeeInsert.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.EmployeeInsert.ForeColor = System.Drawing.Color.White;
-            this.EmployeeInsert.Location = new System.Drawing.Point(560, 177);
+            this.EmployeeInsert.Location = new System.Drawing.Point(558, 177);
             this.EmployeeInsert.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.EmployeeInsert.Name = "EmployeeInsert";
             this.EmployeeInsert.Size = new System.Drawing.Size(60, 25);
@@ -940,12 +957,13 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.DataGridView dataGridViewDepartment;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox PostNumberText;
         private System.Windows.Forms.Button EmployeeClear;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox EmployeePassword;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button PostNumberSearch;
     }
 }

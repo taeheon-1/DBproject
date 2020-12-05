@@ -81,7 +81,7 @@ namespace ERP_PROG
                 conn.Open();
 
                 // DB에서 id와 동일한 회원의 정보를 받음.
-                string query = $"SELECT * FROM number7.사원TEST WHERE employee_code = '{id}'";
+                string query = $"SELECT * FROM number7.사원 WHERE employee_code = '{id}'";
 
                 MySqlCommand cmd = new MySqlCommand(query, conn);
                 MySqlDataReader rdr = cmd.ExecuteReader();

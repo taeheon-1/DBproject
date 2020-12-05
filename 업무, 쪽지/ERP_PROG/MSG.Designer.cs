@@ -47,7 +47,7 @@
             this.textBoxMsgtitle = new System.Windows.Forms.TextBox();
             this.btn_Msgcancel = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBoxMsgreciever = new System.Windows.Forms.ComboBox();
+            this.Recipient = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -264,13 +264,13 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "받는 사람";
             // 
-            // comboBoxMsgreciever
+            // Recipient
             // 
-            this.comboBoxMsgreciever.FormattingEnabled = true;
-            this.comboBoxMsgreciever.Location = new System.Drawing.Point(303, 174);
-            this.comboBoxMsgreciever.Name = "comboBoxMsgreciever";
-            this.comboBoxMsgreciever.Size = new System.Drawing.Size(177, 20);
-            this.comboBoxMsgreciever.TabIndex = 11;
+            this.Recipient.FormattingEnabled = true;
+            this.Recipient.Location = new System.Drawing.Point(303, 174);
+            this.Recipient.Name = "Recipient";
+            this.Recipient.Size = new System.Drawing.Size(177, 20);
+            this.Recipient.TabIndex = 11;
             // 
             // label6
             // 
@@ -289,7 +289,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1184, 661);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.comboBoxMsgreciever);
+            this.Controls.Add(this.Recipient);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btn_Msgcancel);
             this.Controls.Add(this.textBoxMsgtitle);
@@ -333,7 +333,7 @@
         private System.Windows.Forms.TextBox textBoxMsgtitle;
         private System.Windows.Forms.Button btn_Msgcancel;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBoxMsgreciever;
+        private System.Windows.Forms.ComboBox Recipient;
         private System.Windows.Forms.Label label6;
     }
 }

@@ -16,7 +16,7 @@ namespace ERP_PROG
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PersonnelForm());
+            Application.Run(new msgview());
         }
     }
 }

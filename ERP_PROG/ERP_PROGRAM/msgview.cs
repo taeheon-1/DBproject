@@ -13,8 +13,7 @@ namespace ERP_PROG
 {
     public partial class msgview : Form
     {
-        string LoginUser = "류다은";
-
+        string LoginUserName = NormalForm.LoginUserName;
         string strconn = "server=49.50.174.201;Database=number7;Uid=number7;Pwd=number7;Charset=utf8;";
 
         public msgview()
@@ -23,7 +22,7 @@ namespace ERP_PROG
         }
         private void msgview_Load(object sender, EventArgs e)
         {
-            string query = $"select msg_id,msg_sender,msg_title,msg_contents from number7.msg where msg_recipient='{LoginUser}'";
+            string query = $"select msg_id,msg_sender,msg_title,msg_contents from number7.msg where msg_recipient='{LoginUserName}'";
             Load_msg(query);
         }
 
@@ -56,31 +55,80 @@ namespace ERP_PROG
                 conn.Close();
             }
         }
-        
+
+
+        string strConn = "server=49.50.174.201;Database=number7;Uid=number7;Pwd=number7;Charset=utf8;";
+        private void LoadTasks(ListView listView, string query)
+        {
+            listView.Items.Clear();
+
+            using (MySqlConnection conn = new MySqlConnection(strConn))
+            {
+                conn.Open();
+
+                MySqlCommand cmd = new MySqlCommand(query, conn);
+                MySqlDataReader rdr = cmd.ExecuteReader();
+
+                if (rdr.HasRows)
+                {
+                    while (rdr.Read())
+                    {
+
+                        ListViewItem lvi = new ListViewItem(rdr.GetString(0));
+                        lvi.SubItems.Add(rdr.GetString(1));
+                        lvi.SubItems.Add(rdr.GetString(3));
+                        lvi.SubItems.Add(rdr.GetString(4));
+                        lvi.SubItems.Add(rdr.GetString(5));
+                        listView.Items.Add(lvi);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("데이터가 없습니다.");
+                }
+
+                rdr.Close();
+                conn.Close();
+            }
+        }
+
+
         // 검색
         private void btn_Msgsearch_Click(object sender, EventArgs e)
         {
-            /*
+            string msgsender1 = "";
+            
+            string search_keyword = textBoxSearchtitlecontents.Text;
             string query = "";
-            if (string.IsNullOrWhiteSpace(textBoxSearchsender.Text) && string.IsNullOrWhiteSpace(textBoxSearchtitlecontents.Text))
+
+            if (radiobutton_sender.Checked == true)
             {
-                MessageBox.Show("검색어를 입력하세요", "알림");
+                query = $"SELECT * FROM number7.msg WHERE msg_sender LIKE '%{search_keyword}%'";
             }
-            else if (!string.IsNullOrWhiteSpace(textBoxSearchsender.Text) && !string.IsNullOrWhiteSpace(textBoxSearchtitlecontents.Text))
+
+            if (radioButton_title.Checked == true)
             {
-                query = $"select msg_id,msg_sender,msg_title,msg_contents,msg_checkreceive from number7.msg where " +
-                    $" msg_title like '{textBoxSearchtitlecontents.Text}%' or  msg_contents like '{textBoxSearchtitlecontents.Text}%' and msg_recipient='{LoginUser}' and msg_sender like '{textBoxSearchsender.Text}%' ";
+                query = $"SELECT * FROM number7.msg WHERE msg_title LIKE '%{search_keyword}%'";
             }
-            else if (!string.IsNullOrWhiteSpace(textBoxSearchsender.Text))
+
+            if (radioButton_contents.Checked == true)
             {
-                query = $"select msg_id,msg_sender,msg_title,msg_contents,msg_checkreceive from number7.msg where msg_recipient='{LoginUser}' and msg_sender like '{textBoxSearchsender.Text}";
+                query = $"SELECT * FROM number7.msg WHERE msg_contents LIKE '%{search_keyword}%'";
             }
-            else
+
+            LoadTasks(listViewMsg, query);
+/*
+            string query2 = "Select msg_sender from msg";
+            MySqlDataReader rdr = ERPManager.GetInstance().Select(query2);
+            while (rdr.Read())
             {
-                query = $"select msg_id,msg_sender,msg_title,msg_contents,msg_checkreceive from number7.msg where msg_title like '{textBoxSearchtitlecontents.Text}%' or  msg_contents like '{textBoxSearchtitlecontents.Text}%'";
+                msgsender1 = rdr.GetString("msg_sender");
+
+                textBoxSearchsender.Text = msgsender1;
             }
-            Load_msg(query);
-            */
+            textBoxSearchsender.Clear();
+            textBoxSearchtitlecontents.Clear();*/
+
         }
 
         // 쪽지보내기
@@ -98,7 +146,7 @@ namespace ERP_PROG
             string msgid = selected.SubItems[0].Text;
             MSG.msgtitle = selected.SubItems[2].Text;
             MSG.msgsender = selected.SubItems[1].Text;
-            MSG.msgreceiver = LoginUser;
+            MSG.msgreceiver = LoginUserName;
             MSG.msgcontents = selected.SubItems[3].Text;
 
             MSG msg = new MSG();
@@ -114,9 +162,10 @@ namespace ERP_PROG
             }
         }
 
+
         private void btn_Reload_Click(object sender, EventArgs e)
         {
-            string query = $"select msg_id,msg_sender,msg_title,msg_contents,msg_checkreceive from number7.msg where msg_recipient='{LoginUser}'";
+            string query = $"select msg_id,msg_sender,msg_title,msg_contents,msg_checkreceive from number7.msg where msg_recipient='{LoginUserName}'";
             Load_msg(query);
         }
 
@@ -131,6 +180,11 @@ namespace ERP_PROG
         private void msgview_FormClosed(object sender, FormClosedEventArgs e)
         {
             (new NormalForm()).Visible = true;
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
