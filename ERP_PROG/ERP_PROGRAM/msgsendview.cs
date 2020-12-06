@@ -159,17 +159,17 @@ namespace ERP_PROG
 
             if (radiobutton_recipient.Checked == true)
             {
-                query = $"SELECT * FROM number7.msg WHERE msg_recipient LIKE '%{search_keyword}%'";
+                query = $"SELECT * FROM number7.msg WHERE msg_recipient ='{LoginUserName}' && msg_recipient LIKE '%{search_keyword}%'";
             }
 
             if (radioButton_title.Checked == true)
             {
-                query = $"SELECT * FROM number7.msg WHERE msg_title LIKE '%{search_keyword}%'";
+                query = $"SELECT * FROM number7.msg WHERE msg_recipient ='{LoginUserName}' && msg_title LIKE '%{search_keyword}%'";
             }
 
             if (radioButton_contents.Checked == true)
             {
-                query = $"SELECT * FROM number7.msg WHERE msg_contents LIKE '%{search_keyword}%'";
+                query = $"SELECT * FROM number7.msg WHERE msg_recipient ='{LoginUserName}' && msg_contents LIKE '%{search_keyword}%'";
             }
 
             LoadTasks(listViewMsg, query);
