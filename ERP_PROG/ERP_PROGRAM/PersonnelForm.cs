@@ -17,14 +17,15 @@ namespace ERP_PROG
     {
         private Person Per;
         string LoginUserName = NormalForm.LoginUserName;
+        string LoginUserId = NormalForm.LoginUserID;
         public PersonnelForm()
             {
                 InitializeComponent();
                 lnitCombo();
-                dataGridViewDepartment.Visible = false;
-
             }
-            public void InitValue() //기본정보탭 값 초기화 함수
+
+
+        public void InitValue() //기본정보탭 값 초기화 함수
             {
                 EmployeeSearchComboBox.Text = "";
                 EmployeeSearchTextBox.Text = "";
@@ -37,7 +38,7 @@ namespace ERP_PROG
                 EmployeeDepartment.Text = "";
                 EmployeePassword.Text = "";
                 PostNumberText.Text = "";
-                dataGridView1.DataSource = null;
+                dataGridViewEmployee.DataSource = null;
             }
 
             public void lnitCombo() //기본정보탭 부서명 콤보박스
@@ -56,9 +57,11 @@ namespace ERP_PROG
             }
             private void tabControl1_SelectedIndexChanged(object sender, EventArgs e) //탭 이동 선택시
             {
-                dataGridView1.DataSource = null;
-                dataGridViewDepartment.DataSource = null;
+                 dataGridViewEmployee.DataSource = null;
+                 dataGridViewAttendance.DataSource = null;
+                 dataGridViewAttendance.Visible = false;
 
+                
                 if (tabControl1.SelectedTab.Text == "기본정보")
                 {
                     InitValue();
@@ -66,23 +69,23 @@ namespace ERP_PROG
 
                 }
 
+                if (tabControl1.SelectedTab.Text == "출근부")
+                {
+                    dataGridViewAttendance.Visible = true;
+                }
+
                 if (tabControl1.SelectedTab.Text == "부서관리")
                 {
-                    dataGridViewDepartment.Visible = true;
+                    dataGridViewAttendance.Visible = true;
                     DepartmentName.Text = "";
                     DepartmentHead.Text = "";
                     DepartmentCode.Text = "";
                 }
             }
 
-            public void SetLogin(string id)
-            {
-                this.LoginUserName = id;
-            }
-
             private void buttonadd_Click(object sender, EventArgs e) //출근부 등록
             {
-                /*label23.Text = $"{LoginUserID}님 로그인 되었습니다.";*/
+               
 
                 DateTime dt = dateTimePicker1.Value;
                 string date = string.Format("{0}-{1}-{2}", dt.Year, dt.Month, dt.Day);
@@ -103,7 +106,7 @@ namespace ERP_PROG
                     return;
                 }
 
-                string query = "INSERT INTO 출근부(사원코드,날짜,출근시간,퇴근시간) VALUES('" + label23.Text + "','" + date + "', '" + starttime + "','" + endtime + "' )";
+                string query = "INSERT INTO 출근부(사원코드,날짜,출근시간,퇴근시간) VALUES( '" + LoginUserId + "','" + date + "', '" + starttime + "','" + endtime + "' )";
                 ERPManager.GetInstance().Insert(query);
 
                 StartHour.Text = "";
@@ -114,12 +117,12 @@ namespace ERP_PROG
 
             private void buttonread_Click(object sender, EventArgs e) //출근부 출력
             {
-                string query = "SELECT 날짜,출근시간,퇴근시간 FROM 출근부 WHERE 사원코드= '" + label23.Text + "'";
+                string query = "SELECT 사원코드,날짜,출근시간,퇴근시간 FROM 출근부 WHERE 사원코드= '" + LoginUserId + "' ORDER BY 날짜";
 
                 MySqlDataReader rdr = ERPManager.GetInstance().Select(query);
                 DataTable dt = new DataTable();
                 dt.Load(rdr);
-                dataGridView1.DataSource = dt;
+                dataGridViewAttendance.DataSource = dt;
                 rdr.Close();
             }
 
@@ -128,7 +131,7 @@ namespace ERP_PROG
             {
                 if (e.RowIndex >= 0)
                 {
-                    DataGridViewRow row = this.dataGridViewDepartment.Rows[e.RowIndex];
+                    DataGridViewRow row = this.dataGridViewAttendance.Rows[e.RowIndex];
 
                     DepartmentID.Text = row.Cells[0].Value.ToString();
                     DepartmentCode.Text = row.Cells[1].Value.ToString();
@@ -144,7 +147,7 @@ namespace ERP_PROG
                 MySqlDataReader rdr = ERPManager.GetInstance().Select(query);
                 DataTable dt = new DataTable();
                 dt.Load(rdr);
-                dataGridViewDepartment.DataSource = dt;
+                dataGridViewAttendance.DataSource = dt;
                 rdr.Close();
 
             }
@@ -168,8 +171,7 @@ namespace ERP_PROG
                     return;
                 }
 
-                if (DepartmentCode.Text != "" || DepartmentName.Text != "" || DepartmentHead.Text != "")
-                {
+                
                     string q1 = "select * from 부서 where 부서명 = '" + DepartmentName.Text + "'";
                     MySqlDataReader rr = ERPManager.GetInstance().Select(q1);
                     while (rr.Read())
@@ -195,27 +197,16 @@ namespace ERP_PROG
                     MySqlDataReader rdr = ERPManager.GetInstance().Select(q3);
                     DataTable dt = new DataTable();
                     dt.Load(rdr);
-                    dataGridViewDepartment.DataSource = dt;
+                    dataGridViewAttendance.DataSource = dt;
                     rdr.Close();
                     rr.Close();
-                }
+                
 
             }
 
             private void DepartmentUpdate_Click(object sender, EventArgs e) //부서수정
             {
-                string q1 = "select * from 부서 where 부서명 = '" + DepartmentName.Text + "'";
-                MySqlDataReader rr = ERPManager.GetInstance().Select(q1);
-                while (rr.Read())
-                {
-                    MessageBox.Show("동일한 부서명이 존재합니다.");
-                    rr.Close();
-                    DepartmentName.Text = "";
-                    DepartmentHead.Text = "";
-                    DepartmentCode.Text = "";
-                    return;
-                }
-
+           
                 string q2 = "UPDATE 부서 SET 부서코드 = '" + DepartmentCode.Text + "', 부서장 = '" + DepartmentHead.Text + "'," +
                      "부서명 = '" + DepartmentName.Text + "' WHERE id = '" + this.DepartmentID.Text + "'";
                 ERPManager.GetInstance().Update(q2);
@@ -226,7 +217,7 @@ namespace ERP_PROG
                 MySqlDataReader rdr = ERPManager.GetInstance().Select(q3);
                 DataTable dt = new DataTable();
                 dt.Load(rdr);
-                dataGridViewDepartment.DataSource = dt;
+                dataGridViewAttendance.DataSource = dt;
                 rdr.Close();
 
                 DepartmentHead.Text = "";
@@ -248,7 +239,7 @@ namespace ERP_PROG
                     MySqlDataReader rdr = ERPManager.GetInstance().Select(query2);
                     DataTable dt = new DataTable();
                     dt.Load(rdr);
-                    dataGridViewDepartment.DataSource = dt;
+                    dataGridViewAttendance.DataSource = dt;
                     rdr.Close();
 
                 }
@@ -261,24 +252,6 @@ namespace ERP_PROG
                 DepartmentName.Text = "";
                 DepartmentCode.Text = "";
 
-                /*
-
-                string query = "DELETE FROM 부서 WHERE id ='" + this.DepartmentID.Text + "'";
-                ERPManager.GetInstance().Delete(query);
-
-                MessageBox.Show("" + DepartmentName.Text + "가 삭제되었습니다.", "삭제완료");
-                DepartmentHead.Text = "";
-                DepartmentName.Text = "";
-                DepartmentCode.Text = "";
-
-                string query2 = "Select * from 부서";
-                MySqlDataReader rdr = ERPManager.GetInstance().Select(query2);
-                DataTable dt = new DataTable();
-                dt.Load(rdr);
-                dataGridViewDepartment.DataSource = dt;
-                rdr.Close();
-                */
-
             }
 
             private void buttonDeptCancel_Click(object sender, EventArgs e) // 부서 취소
@@ -286,15 +259,16 @@ namespace ERP_PROG
                 DepartmentName.Text = "";
                 DepartmentHead.Text = "";
                 DepartmentCode.Text = "";
-                dataGridViewDepartment.DataSource = null;
+                dataGridViewAttendance.DataSource = null;
             }
 
             //사원관리
             private void buttonStaffSearch_Click(object sender, EventArgs e) //사원검색
             {
-                Per = new Person(EmployeeSearchComboBox, EmployeeSearchTextBox, dataGridView1);
+                Per = new Person(EmployeeSearchComboBox, EmployeeSearchTextBox, dataGridViewEmployee);
                 Per.ShowtoGrid();
             }
+
             private void EmployeeClear_Click(object sender, EventArgs e) //사원취소
             {
                 InitValue();
@@ -306,15 +280,16 @@ namespace ERP_PROG
 
                 if (e.RowIndex >= 0)
                 {
-                    DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
+                    DataGridViewRow row = this.dataGridViewEmployee.Rows[e.RowIndex];
 
                     EmployeeID.Text = row.Cells[0].Value.ToString();
                     EmployeeCode.Text = row.Cells[1].Value.ToString();
+                    EmployeePassword.Text = row.Cells[2].Value.ToString();
                     EmployeeAge.Text = row.Cells[3].Value.ToString();
                     EmployeeName.Text = row.Cells[4].Value.ToString();
                     EmployeeAddress.Text = row.Cells[5].Value.ToString();
-                    EmployeeRank.Text = row.Cells[7].Value.ToString();
                     EmployeeDetailedAddress.Text = row.Cells[6].Value.ToString();
+                    EmployeeRank.Text = row.Cells[7].Value.ToString();
                     EmployeeDepartment.Text = row.Cells[8].Value.ToString();
                 }
             }
@@ -329,11 +304,13 @@ namespace ERP_PROG
 
                 MessageBox.Show("수정완료");
 
-                string query2 = "Select * from 사원 where employee_code = '" + this.EmployeeCode.Text + "'";
+                string query2 = "SELECT employee_id AS ID,employee_code AS 사원코드, employee_password AS 비밀번호, employee_age AS 나이, employee_name AS 사원명," +
+                    "employee_address AS 주소,employee_detailed_address AS 상세주소, employee_rank AS 직급, employee_department AS 부서 " +
+                    "from 사원 where employee_code = '" + this.EmployeeCode.Text + "'";
                 MySqlDataReader rdr = ERPManager.GetInstance().Select(query2);
                 DataTable dt = new DataTable();
                 dt.Load(rdr);
-                dataGridView1.DataSource = dt;
+                dataGridViewEmployee.DataSource = dt;
                 rdr.Close();
             }
 
@@ -353,12 +330,7 @@ namespace ERP_PROG
                     MessageBox.Show("삭제를 취소합니다.", "삭제취소");
                 }
                 InitValue(); //초기화
-                /*
-                string query = "DELETE FROM 사원TEST WHERE employee_code = '" + EmployeeCode.Text + "'";
-                ERPManager.GetInstance().Delete(query);
-                InitValue(); //초기화
-                MessageBox.Show("사원코드:" + EmployeeCode.Text + " 정보가 삭제되었습니다.","삭제완료");
-          */
+               
 
             }
             
@@ -376,7 +348,7 @@ namespace ERP_PROG
                 MySqlDataReader rdr = ERPManager.GetInstance().Select(query2);
                 DataTable dt = new DataTable();
                 dt.Load(rdr);
-                dataGridView1.DataSource = dt;
+                dataGridViewEmployee.DataSource = dt;
                 rdr.Close();
             }
 
