@@ -121,7 +121,7 @@ namespace ERP_PROG
 
         private void buttonTaskDelete_Click(object sender, EventArgs e)
         {
-            if (LoginUserRank != "일반사원")
+            if (LoginUserRank != "일반 사원")
             {
                 int SelectRow = listViewWorkDisplay.SelectedItems[0].Index;
                 string deleteTaskId = listViewWorkDisplay.Items[SelectRow].SubItems[0].Text;
@@ -144,7 +144,7 @@ namespace ERP_PROG
 
         private void buttonGoTaskAdd_Click(object sender, EventArgs e)
         {
-            if (LoginUserRank != "일반사원")
+            if (LoginUserRank != "일반 사원")
             {
                 TaskRegister TaskRegister = new TaskRegister();
                 TaskRegister.ShowDialog();
