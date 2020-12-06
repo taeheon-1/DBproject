@@ -62,7 +62,7 @@ namespace ERP_PROG
 
             Properties.Settings.Default.RememberPwCheckStatus = checkBoxRememberPW.Checked;
         }
-        
+
         private void buttonLogin_Click(object sender, EventArgs e)
         {
             NormalForm normalForm = new NormalForm();
@@ -76,6 +76,7 @@ namespace ERP_PROG
             string loadPw = "";
             string loadName = "";
             string loadRank = "";
+            int msg_count = 0;
 
             using (MySqlConnection conn = new MySqlConnection(strConn))
             {
@@ -110,9 +111,30 @@ namespace ERP_PROG
                         AutoLoadPW();
                         Properties.Settings.Default.Save();
 
-                        // 메인 화면으로 전환
-                        normalForm.Show();
-                        this.Close();
+                        query = $"select count(*) from number7.msg where msg_recipient = '{loadName}' and msg_checkreceive = '0'";
+                        rdr = DBManager.GetInstance().Select(query);
+                        while (rdr.Read())
+                        {
+                            msg_count = Convert.ToInt32(rdr["count(*)"]);
+                        }
+
+                        if (msg_count != 0)
+                        {
+                            DialogResult result = MessageBox.Show("확인하지 않은 메시지가 " + msg_count + "건 있습니다. \r\n확인하시겠습니까?", "알림", MessageBoxButtons.YesNo);
+                            if (result == DialogResult.Yes)
+                            {
+                                this.Close();
+                                msgview msgview = new msgview();
+                                msgview.Show();
+                            }
+                        }
+                        else
+                        {
+                            normalForm.Show();
+                            this.Close();
+                        }
+                        
+
                     }
 
                     // 아이디 또는 비밀번호가 DB와 일치하지 않을 때
@@ -125,6 +147,11 @@ namespace ERP_PROG
                     MessageBox.Show("올바른 로그인 정보를 입력하세요");
 
             }
+        }
+
+        private void LoginForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
