@@ -415,6 +415,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "New_ApprovalForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ERP Program";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

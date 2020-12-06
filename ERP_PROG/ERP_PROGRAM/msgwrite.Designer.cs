@@ -169,6 +169,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Name = "msgWrite";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "msgwrite";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

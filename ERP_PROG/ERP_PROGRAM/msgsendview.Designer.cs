@@ -236,6 +236,7 @@
             this.Controls.Add(this.btn_Msgsearch);
             this.Controls.Add(this.textBoxSearchtitlecontents);
             this.Name = "msgsendview";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "msgsendview";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.msgsendview_FormClosed);
             this.Load += new System.EventHandler(this.msgsendview_Load);

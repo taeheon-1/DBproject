@@ -209,6 +209,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "List_ApprovalForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ERP Program";
             this.Load += new System.EventHandler(this.List_ApprovalForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_approving)).EndInit();

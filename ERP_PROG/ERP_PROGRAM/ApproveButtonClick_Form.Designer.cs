@@ -79,6 +79,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox_Date);
             this.Name = "ApproveButtonClick_Form";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ERP Program";
             this.Load += new System.EventHandler(this.ApproveButtonClick_Form_Load);
             this.ResumeLayout(false);

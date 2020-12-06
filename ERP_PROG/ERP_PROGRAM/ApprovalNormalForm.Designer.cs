@@ -95,6 +95,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ApprovalNormalForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ERP Program";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ApprovalNormalForm_FormClosed);
             this.panel1.ResumeLayout(false);
